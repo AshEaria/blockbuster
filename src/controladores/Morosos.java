@@ -24,7 +24,6 @@ public class Morosos extends Opcion {
 	 */
 	
 	public Morosos() {
-		/* Accedemos a los datos de la base de datos */
 		vista = new MenuMorosos();
 
 		/* Asociamos controlador a la vista */
@@ -41,7 +40,7 @@ public class Morosos extends Opcion {
 	@Override
 	public void actionPerformed(ActionEvent boton) {
 		if (boton.getActionCommand().equals("modoGerente")) {
-			/* Volvemo al panel MenuEmpleado */
+			/* Volvemo al panel MenuGerente */
 			Aplicacion.vuelveMenuGerente();
 
 		}

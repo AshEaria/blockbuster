@@ -22,6 +22,7 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 import controladores.Alquilar;
+import controladores.BuscarArt;
 import controladores.ContrAjustes;
 import controladores.ContratarTarifa;
 import controladores.DarAltaArt;
@@ -58,9 +59,7 @@ import vistas.MenuGerente;
 import vistas.MenuLogin;
 
 /**
- * Esta clase representa la aplicacion en si. Contiene todos los listados y
- * gestiona el login. Esta clase se terminara de implementar mas adelante por
- * formar parte de la interfaz de usuario.
+ * Esta clase representa la aplicacion en si. Contiene todos los listados y actua de controlador para los menus de login, principal de gerente y principal de empleado. 
  * 
  * @author Jaime Monedero y Elena Lechuga
  */
@@ -483,13 +482,6 @@ public class Aplicacion implements ActionListener, WindowListener {
 	public void actionPerformed(ActionEvent boton) {
 		/* De Empleado */
 
-		/* Accedemos a los datos de la base de datos */
-		/*
-		 * alquilar = new Alquilar(); contrtarifa = new ContratarTarifa();
-		 * reponer = new Reponer(); devolver = new Devolver(); newsocio = new
-		 * NuevoSocio(); salir = new Salir(); vista = new MenuEmpleado();
-		 *//* Estos iran dentro de sus respectivos casos */
-
 		if (boton.getActionCommand().equals("MenuAlquilar")) {
 			/* Creamos el panel MenuAlquilar, lo anadimos y lo mostramos */
 			Alquilar cAlquilar = new Alquilar();
@@ -533,6 +525,8 @@ public class Aplicacion implements ActionListener, WindowListener {
 
 		if (boton.getActionCommand().equals("MenuBuscar")) {
 			/* Cambiamos al panel MenuEmpleado */
+			BuscarArt cBuscarArt = new BuscarArt();
+			vista.add(cBuscarArt.getVista(), "MenuBuscar");
 			((CardLayout) vista.getLayout()).show(vista, "MenuBuscar");
 
 		} else if (boton.getActionCommand().equals("MenuTopTen")) {

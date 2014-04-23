@@ -92,8 +92,8 @@ public class Categoria {
 	public ArrayList<Articulo> getArticulos() {
 		ArrayList<Articulo> lista = new ArrayList<Articulo>();
 		Catalogo cat = Catalogo.getInstance();
-		for (int i = 0; i <= articulos.size() && !(articulos.isEmpty()); i++) {
-			lista.set(i, cat.encuentra(articulos.get(i)));
+		for (int i = 0; i < articulos.size() && !(articulos.isEmpty()); i++) {
+			lista.add(i, cat.encuentra(articulos.get(i)));
 		}
 		return lista;
 	}

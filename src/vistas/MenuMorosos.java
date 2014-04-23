@@ -8,7 +8,11 @@ import java.awt.CardLayout;
 import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.event.ActionListener;
+
 import javax.swing.*;
+
+import aplicacion.Ajustes;
+import socios.Alquiler;
 import socios.ListaSocios;
 import socios.Socio;
 /**
@@ -98,6 +102,7 @@ public class MenuMorosos extends JPanel {
 
 	public void tabla() {
 		ejem = ListaSocios.getInstance();
+		Ajustes ajustes = Ajustes.getInstance();
 
 		String[] titulos = { "#Socio","Nombre","Articulos", "Dias retraso","Penalizacion" };
 		Object[][] filas = new Object[ejem.getMorosos().size()][titulos.length];
@@ -112,10 +117,20 @@ public class MenuMorosos extends JPanel {
 							filas[i][x] = e.getNombre();
 						if (x == 2)
 							filas[i][x] = e.getAlquileres().size();
-						if (x == 3)
+						if (x == 3) 
 							filas[i][x] = e.getAlquileres().get(0).diasRetraso();
-						if (x == 4)
-							filas[i][x] = "Falta este campo";
+						if (x == 4) {
+							double precio = 0; 
+							for (Alquiler a : e.getAlquileres()) {
+								if (a.diasRetraso() != 0) {
+									if (a.diasRetraso() > ajustes.getDiasNivelRetraso()) {
+										precio += ajustes.getPenalRetraso1() * ajustes.getDiasNivelRetraso();
+										precio += ajustes.getPenalRetraso2() * (a.diasRetraso() - ajustes.getDiasNivelRetraso());
+									} else precio += ajustes.getPenalRetraso1() * a.diasRetraso();
+								}
+							}
+							filas[i][x] = precio + "€";
+						}
 					}
 					i++;
 
