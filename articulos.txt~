@@ -1,0 +1,77 @@
+3,4,1016,2025
+3.0,2.0,1.5
+M,1003,Miles Davies,1959,Blue in Green,22
+
+E,2005,NO_DISPONIBLE,S
+E,2006,DISPONIBLE,S
+C,Jazz
+P,1004,Scott Pilgrim vs. The World,2010,Edgar Wright,2
+
+E,2008,DISPONIBLE,S
+E,2009,DISPONIBLE,S
+E,2001,ALQUILADO,S
+S,1005,Free!,2,1,0
+
+E,2009,DISPONIBLE,N
+M,1006,Jacques Offenbach,1858,Orphee aux enfers,3
+
+E,2010,NO_DISPONIBLE,S
+S,1001,Friends,1994,2,7
+
+E,2001,RETRASADO,S
+E,2002,RETRASADO,N
+E,2007,DISPONIBLE,S
+C,Comedia
+P,1002,The Godfather,1972,Francis Ford Coppola,14
+
+E,2003,RETRASADO,N
+E,2004,RETRASADO,N
+E,2000,DISPONIBLE,N
+C,Drama 
+C,Mafia
+S,1007,Breaking Bad,2,1,0
+
+C,Accion
+C,Drama
+C,Suspense
+P,1009,fsdgj,2,k,0
+
+C,Comedia
+M,1010,Count on me,2,Bruno Mars,0
+
+E,2012,NO_DISPONIBLE,N
+E,2013,DISPONIBLE,N
+C,Pop
+M,1011,Cantando,2,Violadores del verso,0
+
+E,2014,NO_DISPONIBLE,S
+E,2015,NO_DISPONIBLE,S
+C,Rap
+S,1012,Breaking Bad,2,1,0
+
+E,2016,NO_DISPONIBLE,S
+E,2017,DISPONIBLE,S
+C,Accion
+C,Drama
+C,Suspense
+P,1013,La vida es bella,2,Roberto Benigni,0
+
+E,2018,DISPONIBLE,N
+E,2019,DISPONIBLE,N
+C,Comedia
+C,Drama
+P,1014,La naranja mecanica,2,Stanley Kubrick,0
+
+E,2020,DISPONIBLE,N
+E,2021,DISPONIBLE,N
+C,Accion
+S,1015,Fringe,2,1,0
+
+E,2022,DISPONIBLE,S
+E,2023,DISPONIBLE,S
+C,Fantasia
+C,Suspense
+S,1016,buu,2,4,0
+
+E,2024,DISPONIBLE,S
+E,2025,DISPONIBLE,S

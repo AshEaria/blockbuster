@@ -1,0 +1,5 @@
+10,10
+1, 14780011B, Lucia, 941578862, luci@gmail.es, C/De los Lavajos Madrid,-1,SIN_ALQUILERES,0
+2, 41578914J, Cristina, 644881522, cris@gmail.es, C/Del jazmin Andalucia,-1,SIN_ALQUILERES,0
+3, 77777741Z, Pedro, 611484771, pe@gmail.es, Av Del Espartal Guadalajara,-1,SIN_ALQUILERES,0
+4, 00147991P, Carlos, 644784121, carl@gmail.es, Plaza De Espana Madrid,-1,MOROSO,2,3002,3003
