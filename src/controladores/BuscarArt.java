@@ -46,7 +46,7 @@ public class BuscarArt extends Opcion {
 			
 		} else if (boton.getActionCommand().equals("modoEmpleado")) {
 			/* Volvemo al panel MenuGerente */
-			Aplicacion.vuelveMenuGerente();
+			Aplicacion.vuelveMenuEmpleado();
 
 		} else { /* Boton de categoria */
 			

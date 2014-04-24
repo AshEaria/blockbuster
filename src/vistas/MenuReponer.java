@@ -67,6 +67,7 @@ public class MenuReponer extends JPanel {
 		ImageIcon imAtras = new ImageIcon("atras.png");
 		atras = new JButton(imAtras);
 		atras.setBorder(null);
+	
 
 		/* Componentes MENU INICIAL */
 

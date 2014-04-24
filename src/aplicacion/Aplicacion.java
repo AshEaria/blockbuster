@@ -537,9 +537,9 @@ public class Aplicacion implements ActionListener, WindowListener {
 
 		if (boton.getActionCommand().equals("MenuBuscarG")) {
 			/* Cambiamos al panel MenuEmpleado */
-			BuscarArtG cBuscarArt = new BuscarArtG();
-			vista.add(cBuscarArt.getVista(), "MenuBuscar");
-			((CardLayout) vista.getLayout()).show(vista, "MenuBuscar");
+			BuscarArtG cBuscarArtG = new BuscarArtG();
+			vista.add(cBuscarArtG.getVista(), "MenuBuscarG");
+			((CardLayout) vista.getLayout()).show(vista, "MenuBuscarG");
 
 		} else if (boton.getActionCommand().equals("MenuTopTen")) {
 			/*Creamos y mostramos el panel dar de alta*/
