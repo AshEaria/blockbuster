@@ -3,13 +3,24 @@
  */
 package controladores;
 
+import socios.EstadoSocio;
+import socios.Tarifa;
+import socios.TarifaMusica;
+import socios.TarifaPM;
+import socios.TarifaPS;
+import socios.TarifaPelicula;
+import socios.TarifaPremium;
+import socios.TarifaSM;
+import socios.TarifaSerie;
 import vistas.MenuAjustes;
 
 import java.awt.CardLayout;
 import java.awt.event.ActionEvent;
+import java.util.Calendar;
 
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.JTextField;
 
 import aplicacion.Ajustes;
 import aplicacion.Aplicacion;
@@ -54,6 +65,9 @@ public class ContrAjustes extends Opcion {
 		} else if (boton.getActionCommand().equals("modoAgenerales")) {
 			((CardLayout) vista.getLayout()).show(vista, "modoAgenerales");
 
+		} else if (boton.getActionCommand().equals("modoAtarifa")) {
+			((CardLayout) vista.getLayout()).show(vista, "modoAtarifa");
+
 		} else if (boton.getActionCommand().equals("modoAjustes")) {
 			((CardLayout) vista.getLayout()).show(vista, "PAjustes");
 
@@ -86,8 +100,43 @@ public class ContrAjustes extends Opcion {
 
 			}
 
-		}
+		} else if (boton.getActionCommand().equals("modoConfirmar2")) {
+			
+			JTextField[] cajasPrecios = vista.getPreciosTarifas();
+			double[] precios = new double[8];
+			
+			boolean numOK = false;
+			
+			for (int i = 0; i < 8; i++) {
+				String input = cajasPrecios[i].getText(); 
+				if (input == null) {
+					JOptionPane.showMessageDialog(null, "Alguno de los campos esta vacio.", null, JOptionPane.ERROR_MESSAGE);
+					return;
+				}
+				try {
+					precios[i] = Double.parseDouble(input);
+				}
+				catch (NumberFormatException ex) {
+					JOptionPane.showMessageDialog(null, "Alguno de los numeros ha sido mal introducido.", null, JOptionPane.ERROR_MESSAGE);
+					return;
+				}
+			}
+			
+			TarifaPelicula.setPrecio(precios[0]);
+			TarifaSerie.setPrecio(precios[1]);
+			TarifaMusica.setPrecio(precios[2]);
+			TarifaPS.setPrecio(precios[3]);
+			TarifaPM.setPrecio(precios[4]);
+			TarifaSM.setPrecio(precios[5]);
+			TarifaPremium.setPrecio(precios[6]);
+			Tarifa.setExtraPlus(precios[7]);
+			
+			JOptionPane.showMessageDialog(null, "Precios modificados correctamente.", null, JOptionPane.INFORMATION_MESSAGE);
 
+			ContrAjustes cAjustes = new ContrAjustes();
+			vista.add(cAjustes.getVista(), "c");
+			((CardLayout) vista.getLayout()).show(vista, "c");
+		}
 	}
 
 	public JPanel getVista() {

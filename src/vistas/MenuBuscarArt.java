@@ -210,21 +210,56 @@ public class MenuBuscarArt extends JPanel {
 		
 		ArrayList<Articulo> arts = catalogo.encuentra(nombre, tipoActual).getArticulos();
 		
-		String[] titulos = { "Puesto", "Titulo", "Veces alquilado" };
+		String tit1; 
+		String tit2; 
+		
+		if (tipoActual.equals("Pelicula")) {
+			tit1 = "Ano"; 
+			tit2 = "Director"; 
+		} else if (tipoActual.equals("Serie")) {
+			tit1 = "Temporada"; 
+			tit2 = "Volumen"; 
+		} else {
+			tit1 = "Ano"; 
+			tit2 = "Interprete";
+		}
+		
+		String[] titulos = { "Titulo", tit1, tit2 };
 		Object[][] filas = new Object[arts.size()][titulos.length];
 
 		int i = 0;
 		for (Articulo e : arts) {
-			for (int x = 0; x < titulos.length; x++) {
-
-				if (x == 0)
-					filas[i][x] = i+1;
-				if (x == 1)
-					filas[i][x] = e.getTitulo();
-				if (x == 2)
-					filas[i][x] = e.getVeces();
+			if (tipoActual.equals("Pelicula")) {
+				for (int x = 0; x < titulos.length; x++) {
+					if (x == 0)
+						filas[i][x] = e.getTitulo();
+					if (x == 1)
+						filas[i][x] = ((Pelicula)e).getAno();
+					if (x == 2)
+						filas[i][x] = ((Pelicula)e).getDirector();
+				}
+				i++;
+			} else if (tipoActual.equals("Serie")) {
+				for (int x = 0; x < titulos.length; x++) {
+					if (x == 0)
+						filas[i][x] = e.getTitulo();
+					if (x == 1)
+						filas[i][x] = ((Serie)e).getTemporada();
+					if (x == 2)
+						filas[i][x] = ((Serie)e).getVolumen();
+				}
+				i++;
+			} else if (tipoActual.equals("Musica")) {
+				for (int x = 0; x < titulos.length; x++) {
+					if (x == 0)
+						filas[i][x] = e.getTitulo();
+					if (x == 1)
+						filas[i][x] = ((Musica)e).getAno();
+					if (x == 2)
+						filas[i][x] = ((Musica)e).getInterprete();
+				}
+				i++;
 			}
-			i++;
 		}
 		tReponer = new Tabla(filas, titulos);
 
