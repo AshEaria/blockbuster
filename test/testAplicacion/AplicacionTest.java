@@ -20,7 +20,7 @@ import aplicacion.Aplicacion;
  */
 public class AplicacionTest {
 
-	private Aplicacion api = new Aplicacion();
+	private Aplicacion api = Aplicacion.getInstance();
 	/**
 	 * Test method for {@link aplicacion.Aplicacion#main()}.
 	 */

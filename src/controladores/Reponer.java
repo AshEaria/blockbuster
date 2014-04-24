@@ -12,7 +12,7 @@ import catalogo.EstadoEjemplar;
 import catalogo.ListaEjemplares;
 
 /**
- * Esta clase es el controlador de el arranque de la aplicacion.
+ * Esta clase es el controlador del menu para reponer articulos. 
  * 
  * @author Elena Lechuga y Jaime Monedero
  */
@@ -25,7 +25,7 @@ public class Reponer extends Opcion {
 	/* CONSTRUCTOR */
 
 	/**
-	 * Este constructor crea el panel del menu de alquiler.
+	 * Este constructor crea el panel del menu de reposicion de articulos y se asocia a el como controlador.
 	 */
 	public Reponer() {
 
@@ -37,12 +37,11 @@ public class Reponer extends Opcion {
 		((MenuReponer) vista).setControlador(this);
 
 	}
+	
+	// TODO Arreglar problema checkboxes Reponer. 
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
+	/** 
+	 * @see java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
 	 */
 	@Override
 	public void actionPerformed(ActionEvent boton) {
@@ -79,11 +78,19 @@ public class Reponer extends Opcion {
 		}
 
 	}
-
+	
+	/**
+	 * @see controladores.Opcion#getVista()
+	 */
 	public JPanel getVista() {
 		return (JPanel) vista;
 	}
 
+	/**
+	 * Devuelve los id de las entradas de la lista que hay que reponer. 
+	 * 
+	 * @return array con los ids. 
+	 */
 	public int[] getIdMarcado() {
 		int numIds=0;
 		/*Creamos un array del tamano de las filas seleccionadas*/

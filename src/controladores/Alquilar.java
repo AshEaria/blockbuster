@@ -45,7 +45,7 @@ public class Alquilar extends Opcion implements OpcionConPago {
 	/* CONSTRUCTOR */
 	
 	/** 
-	 * Este constructor crea el panel del menu de alquiler. 
+	 * Este constructor crea el panel del menu de alquiler segun el numero de socio que pide por dialogo. 
 	 */
 	public Alquilar() {
 		
@@ -120,9 +120,7 @@ public class Alquilar extends Opcion implements OpcionConPago {
 	}
 	
 	/**
-	 * Metodo de acceso a la vista MenuAlquilar controlada por este objeto. 
-	 * 
-	 * @return Panel vista del menu
+	 * @see controladores.Opcion#getVista()
 	 */
 	public JPanel getVista() {
 		return (JPanel) vista;
@@ -244,6 +242,11 @@ public class Alquilar extends Opcion implements OpcionConPago {
 		return datos;
 	}
 	
+	/**
+	 * Calcula el precio de los alquileres segun la configuracion que se haya elegido en la vista. 
+	 * 
+	 * @return Precio total de la operacion. 
+	 */
 	public double calcularPrecio() {
 		Tarifa tar = socio.getTarifa();
 		double precioTotal = 0;
@@ -260,7 +263,7 @@ public class Alquilar extends Opcion implements OpcionConPago {
 		return precioTotal;
 	}
 
-	/* (non-Javadoc)
+	/**
 	 * @see controladores.OpcionConPago#pagoOK()
 	 */
 	@Override

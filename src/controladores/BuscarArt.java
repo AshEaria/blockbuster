@@ -9,7 +9,6 @@ import javax.swing.JPanel;
 
 import aplicacion.Aplicacion;
 import vistas.MenuBuscarArt;
-import vistas.MenuMorosos;
 
 /**
  * Esta clase representa la opcion de busqueda de articulos por tipo y categoria. 
@@ -19,6 +18,9 @@ import vistas.MenuMorosos;
 public class BuscarArt extends Opcion {
 	private MenuBuscarArt vista; 
 	
+	/**
+	 * Este constructor crea una vista del menu Buscar Articulo y se asocia a ella como controlador. 
+	 */
 	public BuscarArt() {
 		vista = new MenuBuscarArt(this);
 
@@ -26,7 +28,7 @@ public class BuscarArt extends Opcion {
 		((MenuBuscarArt) vista).setControlador(this);
 	}
 
-	/* (non-Javadoc)
+	/**
 	 * @see java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
 	 */
 	@Override
@@ -54,7 +56,7 @@ public class BuscarArt extends Opcion {
 		
 	}
 
-	/* (non-Javadoc)
+	/**
 	 * @see controladores.Opcion#getVista()
 	 */
 	@Override

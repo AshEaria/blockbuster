@@ -29,6 +29,9 @@ public class ContratarTarifa extends Opcion implements OpcionConPago {
 	private Pagar cPagar;
 	private Socio socio; 
 	
+	/** 
+	 * Este constructor crea el panel del menu de contratacion de tarifa segun el numero de socio que pide por dialogo. 
+	 */
 	public ContratarTarifa() {
 		
 		/* Accedemos a los datos de la base de datos */
@@ -73,7 +76,7 @@ public class ContratarTarifa extends Opcion implements OpcionConPago {
 		} else vista = null;
 	}
 	
-	/* (non-Javadoc)
+	/**
 	 * @see java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
 	 */
 	@Override
@@ -95,7 +98,7 @@ public class ContratarTarifa extends Opcion implements OpcionConPago {
 		}
 	}
 
-	/* (non-Javadoc)
+	/**
 	 * @see controladores.Opcion#getVista()
 	 */
 	@Override
@@ -108,7 +111,7 @@ public class ContratarTarifa extends Opcion implements OpcionConPago {
 		return dummyTar.getPrecio() + ((dummyTar.isPlus()) ? Tarifa.getExtraPlus() : 0);
 	}
 
-	/* (non-Javadoc)
+	/**
 	 * @see controladores.OpcionConPago#pagoOK()
 	 */
 	@Override

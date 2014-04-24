@@ -70,7 +70,7 @@ public class Aplicacion implements ActionListener, WindowListener {
 
 	/* PATRON SINGLETON */
 
-	public Aplicacion() {
+	private Aplicacion() {
 		/* Inicializar la aplicacion */
 		inicializaListas();
 
@@ -106,6 +106,11 @@ public class Aplicacion implements ActionListener, WindowListener {
 
 	}
 
+	/**
+	 * Parte del patron Singleton. 
+	 * 
+	 * @return Instancia unica del objeto Aplicacion. 
+	 */
 	public static Aplicacion getInstance() {
 		if (INSTANCE == null)
 			INSTANCE = new Aplicacion();
@@ -114,15 +119,16 @@ public class Aplicacion implements ActionListener, WindowListener {
 
 	/* MAIN */
 
+	/** 
+	 * Punto de entrada al programa. Solo se encarga de activar la aplicacion. 
+	 */
 	public static void main(String[] args) {
 		@SuppressWarnings("unused")
-		Aplicacion apli = new Aplicacion();
+		Aplicacion apli = getInstance();
 	}
 
 	/**
-	 * Punto de entrada a la aplicacion. Por el momento es un main de prueba de
-	 * funcionalidad. En su version final gestionara la inicializacion de bases
-	 * de datos y el login.
+	 * Main de prueba de la entrega anterior. 
 	 * 
 	 */
 	public static void mainDePrueba(String[] args) {
@@ -278,7 +284,7 @@ public class Aplicacion implements ActionListener, WindowListener {
 
 	/**
 	 * Inicializa todas las bases de datos a partir de ficheros, llamando a los
-	 * constructores de cada una.
+	 * constructores de cada una, y actualiza las bases de datos segun la fecha. 
 	 * 
 	 * @return true si se inicializan correctamente, false si hay algun error.
 	 */
@@ -472,8 +478,7 @@ public class Aplicacion implements ActionListener, WindowListener {
 		return (JPanel) vista;
 	}
 
-	/*
-	 * (non-Javadoc)
+	/**
 	 * 
 	 * @see
 	 * java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
@@ -609,9 +614,6 @@ public class Aplicacion implements ActionListener, WindowListener {
 		
 	}
 	
-	
-	
-
 	/**
 	 * Metodo encargado de mostrar el panel MenuEmpleado
 	 */
@@ -626,6 +628,9 @@ public class Aplicacion implements ActionListener, WindowListener {
 		((CardLayout) vista.getLayout()).show(vista, "MenuGerente");
 	}
 	
+	/**
+	 * Metodo encargado de mostrar el panel MenuDarAlta
+	 */
 	public static void vuelveDarAlta() {
 		/*Creamos y mostramos el panel dar de alta*/
 		DarAltaArt cDarAlta = new DarAltaArt();
@@ -639,11 +644,12 @@ public class Aplicacion implements ActionListener, WindowListener {
 	 */
 	@Override
 	public void windowActivated(WindowEvent arg0) {
-		// TODO Auto-generated method stub
 		
 	}
 
-	/* (non-Javadoc)
+	/** 
+	 * Guarda las bases de datos de la aplicacion y sale del programa cuando detecta que se ha cerrado la ventana. 
+	 * 
 	 * @see java.awt.event.WindowListener#windowClosed(java.awt.event.WindowEvent)
 	 */
 	@Override
@@ -658,7 +664,6 @@ public class Aplicacion implements ActionListener, WindowListener {
 	 */
 	@Override
 	public void windowClosing(WindowEvent arg0) {
-		// TODO Auto-generated method stub
 		
 	}
 
@@ -667,7 +672,6 @@ public class Aplicacion implements ActionListener, WindowListener {
 	 */
 	@Override
 	public void windowDeactivated(WindowEvent arg0) {
-		// TODO Auto-generated method stub
 		
 	}
 
@@ -676,7 +680,6 @@ public class Aplicacion implements ActionListener, WindowListener {
 	 */
 	@Override
 	public void windowDeiconified(WindowEvent arg0) {
-		// TODO Auto-generated method stub
 		
 	}
 
@@ -685,7 +688,6 @@ public class Aplicacion implements ActionListener, WindowListener {
 	 */
 	@Override
 	public void windowIconified(WindowEvent arg0) {
-		// TODO Auto-generated method stub
 		
 	}
 
@@ -694,7 +696,6 @@ public class Aplicacion implements ActionListener, WindowListener {
 	 */
 	@Override
 	public void windowOpened(WindowEvent arg0) {
-		// TODO Auto-generated method stub
 		
 	}
 

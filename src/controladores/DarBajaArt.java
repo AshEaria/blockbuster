@@ -13,23 +13,24 @@ import javax.swing.JPanel;
  * @author Elena Lechuga y Jaime Monedero
  */
 public class DarBajaArt extends Opcion {
+	
+	private JPanel vista;
 
-	/* (non-Javadoc)
+	/**
 	 * @see java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
 	 */
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		// TODO Auto-generated method stub
+		// TODO DarBajaArt
 		
 	}
 
-	/* (non-Javadoc)
+	/**
 	 * @see controladores.Opcion#getVista()
 	 */
 	@Override
 	public JPanel getVista() {
-		// TODO Auto-generated method stub
-		return null;
+		return vista;
 	}
 
 }

@@ -4,11 +4,14 @@
 package controladores;
 
 import vistas.MenuMorosos;
+
 import java.awt.event.ActionEvent;
+
 import javax.swing.JPanel;
+
 import aplicacion.Aplicacion;
 /**
- * Esta clase es el controlador de el arranque de la aplicacion.
+ * Esta clase es el controlador del listado de morosos. 
  * 
  * @author Elena Lechuga y Jaime Monedero
  */
@@ -20,9 +23,8 @@ public class Morosos extends Opcion {
 	/* CONSTRUCTOR */
 
 	/**
-	 * Este constructor crea el panel del menu de alquiler.
+	 * Este constructor crea el panel del listado de clientes morosos y se asocia a el como controlador. 
 	 */
-	
 	public Morosos() {
 		vista = new MenuMorosos();
 
@@ -31,11 +33,8 @@ public class Morosos extends Opcion {
 
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
+	/**
+	 * @see java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
 	 */
 	@Override
 	public void actionPerformed(ActionEvent boton) {
@@ -47,6 +46,10 @@ public class Morosos extends Opcion {
 
 	}
 
+	/**
+	 * @see controladores.Opcion#getVista()
+	 */
+	@Override
 	public JPanel getVista() {
 		return (JPanel) vista;
 	}

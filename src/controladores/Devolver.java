@@ -33,6 +33,9 @@ public class Devolver extends Opcion implements OpcionConPago {
 	private ArrayList<Alquiler> alqDevolviendo;
 	private boolean[] ndDev; 
 	
+	/**
+	 * Este constructor crea el menu de devolucion de articulos y se asocia a el como controlador. 
+	 */
 	public Devolver() {
 
 		/* Accedemos a los datos de la base de datos */
@@ -77,7 +80,7 @@ public class Devolver extends Opcion implements OpcionConPago {
 		} else vista = null;
 	}
 
-	/* (non-Javadoc)
+	/**
 	 * @see java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
 	 */
 	@Override
@@ -106,7 +109,7 @@ public class Devolver extends Opcion implements OpcionConPago {
 		}
 	}
 
-	/* (non-Javadoc)
+	/**
 	 * @see controladores.Opcion#getVista()
 	 */
 	@Override
@@ -132,7 +135,7 @@ public class Devolver extends Opcion implements OpcionConPago {
 		return precio;
 	}
 
-	/* (non-Javadoc)
+	/**
 	 * @see controladores.OpcionConPago#pagoOK()
 	 */
 	@Override

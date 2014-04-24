@@ -4,20 +4,23 @@
 package controladores;
 
 import vistas.MenuMusicaAlta;
+
 import java.awt.event.ActionEvent;
+
 import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.JTextField;
+
 import catalogo.Catalogo;
 import catalogo.Categoria;
 import catalogo.Ejemplar;
 import aplicacion.Aplicacion;
 
 /**
- * Esta clase es el controlador de el arranque de la aplicacion.
+ * Esta clase es el controlador del menu de creacion de nuevos articulos de musica. 
  * 
  * @author Elena Lechuga y Jaime Monedero
  */
@@ -39,7 +42,7 @@ public class MusicaAlta extends Opcion {
 	/* CONSTRUCTOR */
 
 	/**
-	 * Este constructor crea el panel del menu de alquiler.
+	 * Este constructor crea el panel del menu de alta de articulos de musica y se asocia a el como controlador.
 	 */
 	public MusicaAlta() {
 
@@ -60,11 +63,8 @@ public class MusicaAlta extends Opcion {
 
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
+	/**
+	 * @see java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
 	 */
 	@Override
 	public void actionPerformed(ActionEvent boton) {
@@ -90,10 +90,16 @@ public class MusicaAlta extends Opcion {
 
 	}
 
+	/**
+	 * @see controladores.Opcion#getVista()
+	 */
+	@Override
 	public JPanel getVista() {
 		return (JPanel) vista;
 	}
 
+	// TODO Javadoc altaMusica
+	
 	public void altaMusica() {
 		/* Añadir articulo al catalogo */
 		int id = articulos.crearMusica(titulo.getText(),
@@ -123,6 +129,9 @@ public class MusicaAlta extends Opcion {
 
 	}
 
+	/** 
+	 * Limpia los campos del formulario. 
+	 */
 	public void limpiaCampos() {
 
 		CD.setContentAreaFilled(false);

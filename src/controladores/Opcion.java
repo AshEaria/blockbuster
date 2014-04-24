@@ -14,5 +14,10 @@ import javax.swing.JPanel;
  * @author Elena Lechuga y Jaime Monedero
  */
 public abstract class Opcion implements ActionListener {
+	/**
+	 * Metodo de acceso a la vista controlada por este controlador. 
+	 * 
+	 * @return JPanel relacionado con el controlador. 
+	 */
 	public abstract JPanel getVista();
 }

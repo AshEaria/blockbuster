@@ -17,7 +17,7 @@ import catalogo.Ejemplar;
 import aplicacion.Aplicacion;
 
 /**
- * Esta clase es el controlador de el arranque de la aplicacion.
+ * Esta clase es el controlador del menu de creacion de articulos serie. 
  * 
  * @author Elena Lechuga y Jaime Monedero
  */
@@ -60,11 +60,8 @@ public class SerieAlta extends Opcion {
 
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
+	/**
+	 * @see java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
 	 */
 	@Override
 	public void actionPerformed(ActionEvent boton) {
@@ -90,10 +87,16 @@ public class SerieAlta extends Opcion {
 
 	}
 
+	/**
+	 * @see controladores.Opcion#getVista()
+	 */
 	public JPanel getVista() {
 		return (JPanel) vista;
 	}
 
+	/**
+	 * Efectua la operacion de creacion de la serie, anadiendola a la base de datos. 
+	 */
 	public void altaSerie() {
 		/* Añadir articulo al catalogo */
 		int id = articulos.crearSerie(titulo.getText(),
@@ -124,6 +127,9 @@ public class SerieAlta extends Opcion {
 
 	}
 
+	/**
+	 * Limpia los campos del formulario. 
+	 */
 	public void limpiaCampos() {
 		DVD.setSelected(false);
 		bluray.setSelected(false);

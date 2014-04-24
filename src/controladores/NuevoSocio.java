@@ -6,13 +6,15 @@ package controladores;
 import aplicacion.Aplicacion;
 import socios.ListaSocios;
 import vistas.MenuNuevoSocio;
+
 import java.awt.event.ActionEvent;
+
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 /**
- * Esta clase es el controlador de el arranque de la aplicacion.
+ * Esta clase es el controlador del menu de creacion de nuevo socio. 
  * 
  * @author Elena Lechuga y Jaime Monedero
  */
@@ -30,7 +32,7 @@ public class NuevoSocio extends Opcion {
 	/* CONSTRUCTOR */
 
 	/**
-	 * Este constructor crea el panel del menu de alquiler.
+	 * Este constructor crea el panel del menu de creacion de nuevo socio y se asocia a el como controlador. 
 	 */
 	public NuevoSocio() {
 
@@ -51,11 +53,8 @@ public class NuevoSocio extends Opcion {
 
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
+	/**
+	 * @see java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
 	 */
 	@Override
 	public void actionPerformed(ActionEvent boton) {
@@ -75,10 +74,17 @@ public class NuevoSocio extends Opcion {
 
 	}
 
+	/**
+	 * @see controladores.Opcion#getVista()
+	 */
+	@Override
 	public JPanel getVista() {
 		return (JPanel) vista;
 	}
 
+	/**
+	 * Efectua la operacion de creacion del socio, anadiendolo a la base de datos. 
+	 */
 	public void creaNuevoSocio() {
 
 		JOptionPane.showMessageDialog(
@@ -89,6 +95,9 @@ public class NuevoSocio extends Opcion {
 								direccion.getText()));
 	}
 
+	/** 
+	 * Limpia los campos del formulario. 
+	 */
 	public void limpiaCampos() {
 		nombre.setText(null);
 		dni.setText(null);

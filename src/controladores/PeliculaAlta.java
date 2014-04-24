@@ -4,20 +4,23 @@
 package controladores;
 
 import vistas.MenuPeliculaAlta;
+
 import java.awt.event.ActionEvent;
+
 import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.JTextField;
+
 import catalogo.Catalogo;
 import catalogo.Categoria;
 import catalogo.Ejemplar;
 import aplicacion.Aplicacion;
 
 /**
- * Esta clase es el controlador de el arranque de la aplicacion.
+ * Esta clase es el controlador del menu de creacion de una pelicula nueva. 
  * 
  * @author Elena Lechuga y Jaime Monedero
  */
@@ -39,7 +42,7 @@ public class PeliculaAlta extends Opcion {
 	/* CONSTRUCTOR */
 
 	/**
-	 * Este constructor crea el panel del menu de alquiler.
+	 * Este constructor crea el panel del menu de creacion de nuevas peliculas.
 	 */
 	public PeliculaAlta() {
 
@@ -60,11 +63,8 @@ public class PeliculaAlta extends Opcion {
 
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
+	/** 
+	 * @see java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
 	 */
 	@Override
 	public void actionPerformed(ActionEvent boton) {
@@ -90,10 +90,17 @@ public class PeliculaAlta extends Opcion {
 
 	}
 
+	/**
+	 * @see controladores.Opcion#getVista()
+	 */
+	@Override
 	public JPanel getVista() {
 		return (JPanel) vista;
 	}
 
+	/**
+	 * Efectua la operacion de creacion de la pelicula, anadiendola a la base de datos. 
+	 */
 	public void altaPelicula() {
 		/* Añadir articulo al catalogo */
 		int id = articulos.crearPelicula(titulo.getText(),
@@ -122,6 +129,9 @@ public class PeliculaAlta extends Opcion {
 
 	}
 
+	/**
+	 * Limpia los campos del formulario. 
+	 */
 	public void limpiaCampos() {
 		DVD.setSelected(false);
 		bluray.setSelected(false);

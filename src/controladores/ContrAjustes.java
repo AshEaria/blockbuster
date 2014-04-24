@@ -3,7 +3,6 @@
  */
 package controladores;
 
-import socios.EstadoSocio;
 import socios.Tarifa;
 import socios.TarifaMusica;
 import socios.TarifaPM;
@@ -29,7 +28,7 @@ import aplicacion.Ajustes;
 import aplicacion.Aplicacion;
 
 /**
- * Esta clase es el controlador de el arranque de la aplicacion.
+ * Esta clase es el controlador del menu de configuracion. 
  * 
  * @author Elena Lechuga y Jaime Monedero
  */
@@ -41,9 +40,8 @@ public class ContrAjustes extends Opcion {
 	/* CONSTRUCTOR */
 
 	/**
-	 * Este constructor crea el panel del menu de alquiler.
+	 * Este constructor crea el panel del menu de configuracion.
 	 */
-
 	public ContrAjustes() {
 		/* Accedemos a los datos de la base de datos */
 		vista = new MenuAjustes();
@@ -53,11 +51,8 @@ public class ContrAjustes extends Opcion {
 
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
+	/**
+	 * @see java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
 	 */
 	@Override
 	public void actionPerformed(ActionEvent boton) {
@@ -179,10 +174,17 @@ public class ContrAjustes extends Opcion {
 		}
 	}
 
+	/**
+	 * @see controladores.Opcion#getVista()
+	 */
+	@Override
 	public JPanel getVista() {
 		return (JPanel) vista;
 	}
 
+	/**
+	 * Cambia el nombre del videoclub por el introducido en la caja de texto correspondiente. 
+	 */
 	public void cambioDeNombre() {
 
 		if (!vista.getCajaNnuevo().getText().isEmpty())
@@ -191,6 +193,11 @@ public class ContrAjustes extends Opcion {
 
 	}
 
+	/**
+	 * Cambia la contrasena por la introducida en la caja de texto correspondiente si el gerente se autentifica correctamente. 
+	 * 
+	 * @return true si la contrasena se cambia correctamente, false si la contrasena escrita por el gerente no es valida. 
+	 */
 	public boolean cambioDeContrasena() {
 		
 		if (vista.getCajacAntigua().getText().equals(
@@ -203,6 +210,9 @@ public class ContrAjustes extends Opcion {
 
 	}
 
+	/**
+	 * Limpia los campos del menu de ajustes generales. 
+	 */
 	public void limpiaCampos() {
 		vista.getCajaNnuevo().setText(null);
 		vista.getCajacNueva().setText(null);

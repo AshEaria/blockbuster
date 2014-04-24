@@ -7,11 +7,13 @@ import vistas.MenuDarAlta;
 
 import java.awt.CardLayout;
 import java.awt.event.ActionEvent;
+
 import javax.swing.JPanel;
+
 import aplicacion.Aplicacion;
 
 /**
- * Esta clase es el controlador de el arranque de la aplicacion.
+ * Esta clase es el controlador del menu de alta de articulos nuevos. 
  * 
  * @author Elena Lechuga y Jaime Monedero
  */
@@ -23,7 +25,7 @@ public class DarAltaArt extends Opcion {
 	/* CONSTRUCTOR */
 
 	/**
-	 * Este constructor crea el panel del menu de alquiler.
+	 * Este constructor crea el panel del menu de alta de articulo nuevo. 
 	 */
 	public DarAltaArt() {
 
@@ -35,11 +37,8 @@ public class DarAltaArt extends Opcion {
 
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
+	/**
+	 * @see java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
 	 */
 	@Override
 	public void actionPerformed(ActionEvent boton) {
@@ -67,6 +66,10 @@ public class DarAltaArt extends Opcion {
 
 	}
 
+	/**
+	 * @see controladores.Opcion#getVista()
+	 */
+	@Override
 	public JPanel getVista() {
 		return (JPanel) vista;
 	}

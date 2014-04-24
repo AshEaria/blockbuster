@@ -15,7 +15,7 @@ public class testMenuAplicacion {
 public static void main(String[] args) {
 		
 		JFrame ventana = new JFrame("BlockBusters");
-		Aplicacion controlador = new Aplicacion();
+		Aplicacion controlador = Aplicacion.getInstance();
 		ventana.setContentPane(controlador.getVista());
 		ventana.getContentPane().setVisible(true);
 

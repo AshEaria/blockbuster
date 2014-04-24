@@ -22,15 +22,22 @@ import org.visa.tpv.excepciones.ExcepcionVISA;
 import vistas.MenuPagar;
 
 /**
- * @author Jaime
- *
+ * Esta clase representa el controlador de la interfaz de pago. 
+ * 
+ * @author Elena Lechuga y Jaime Monedero
  */
-public class Pagar implements ActionListener {
+public class Pagar extends Opcion {
 	
 	private MenuPagar vista;
 	private OpcionConPago parent;
 	private double precio;
 	
+	/**
+	 * Este constructor crea la interfaz de pago y se asocia a ella como controlador. 
+	 * 
+	 * @param precio Cantidad a pagar. 
+	 * @param caller ControladorConPago que ha llamado a Pagar. 
+	 */
 	public Pagar(double precio, OpcionConPago caller) {
 		parent = caller;
 		vista = new MenuPagar(precio);
@@ -38,7 +45,7 @@ public class Pagar implements ActionListener {
 		this.precio = precio; 
 	}
 
-	/* (non-Javadoc)
+	/**
 	 * @see java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
 	 */
 	@Override
@@ -68,10 +75,22 @@ public class Pagar implements ActionListener {
 		}
 	}
 	
+	/**
+	 * @see controladores.Opcion#getVista()
+	 */
+	@Override
 	public JPanel getVista() {
 		return vista;
 	}
 	
+	/**
+	 * Gestiona las excepciones que pueden saltar al usar la PasarelaDePago, y muestra mensajes de error de manera acorde. 
+	 * 
+	 * @param num String con el numero de la tarjeta. 
+	 * @param con Cadena con la contrasena. 
+	 * @param precio Cantidad a pagar. 
+	 * @return true si se ha efectuado la operacion correctamente. Devuelve false y lanza un popup si no. 
+	 */
 	public boolean pagoTarjeta(String num, char[] con, double precio) {
 		PasarelaDePago pasarela = PasarelaDePago.getPasarela();
 		

@@ -8,7 +8,7 @@ import java.awt.event.ActionEvent;
 import javax.swing.JPanel;
 import aplicacion.Aplicacion;
 /**
- * Esta clase es el controlador de el arranque de la aplicacion.
+ * Esta clase es el controlador del listado de top 10 de la aplicacion. 
  * 
  * @author Elena Lechuga y Jaime Monedero
  */
@@ -34,9 +34,9 @@ public class TopTen extends Opcion {
 
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
+	// TODO TopTen no da los articulos correctos. 
+	
+	/**
 	 * @see
 	 * java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
 	 */
@@ -61,6 +61,9 @@ public class TopTen extends Opcion {
 
 	}
 
+	/**
+	 * @see controladores.Opcion#getVista()
+	 */
 	public JPanel getVista() {
 		return (JPanel) vista;
 	}
