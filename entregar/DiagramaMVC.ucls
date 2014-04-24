@@ -1,0 +1,857 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.5" icons="true" automaticImage="PNG" always-add-relationships="false" generalizations="true" 
+  realizations="true" associations="true" dependencies="false" nesting-relationships="true">  
+  <class id="1" language="java" name="vistas.MenuEmpleado" project="blockbuster" 
+    file="/blockbuster/src/vistas/MenuEmpleado.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="369" width="198" x="568" y="-78"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="controladores.BuscarArtG" project="blockbuster" 
+    file="/blockbuster/src/controladores/BuscarArtG.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="194" x="2175" y="331"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="vistas.MenuGerente" project="blockbuster" 
+    file="/blockbuster/src/vistas/MenuGerente.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="333" width="198" x="852" y="-78"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="vistas.MenuTopTen" project="blockbuster" 
+    file="/blockbuster/src/vistas/MenuTopTen.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="495" width="198" x="2892" y="650"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="controladores.TopTen" project="blockbuster" 
+    file="/blockbuster/src/controladores/TopTen.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="194" x="2877" y="331"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="vistas.MenuReponer" project="blockbuster" 
+    file="/blockbuster/src/vistas/MenuReponer.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="549" width="198" x="1877" y="650"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="vistas.MenuPeliculaAlta" project="blockbuster" 
+    file="/blockbuster/src/vistas/MenuPeliculaAlta.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="423" width="198" x="4680" y="650"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="controladores.Devolver" project="blockbuster" 
+    file="/blockbuster/src/controladores/Devolver.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="207" width="198" x="1299" y="331"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="vistas.MenuMorosos" project="blockbuster" 
+    file="/blockbuster/src/vistas/MenuMorosos.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="315" width="198" x="2654" y="650"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="controladores.DarAltaArt" project="blockbuster" 
+    file="/blockbuster/src/controladores/DarAltaArt.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="194" x="810" y="331"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="socios.ListaContratos" project="blockbuster" 
+    file="/blockbuster/src/socios/ListaContratos.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="243" width="201" x="3151" y="650"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="controladores.Alquilar" project="blockbuster" 
+    file="/blockbuster/src/controladores/Alquilar.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="279" width="211" x="1578" y="331"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <package id="13" language="java" name="controladores" project="blockbuster" file="/blockbuster/src/controladores" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="50" width="104" x="1137" y="-78"/>    
+    <display autosize="true" stereotype="true" accessors="true"/>  
+  </package>  
+  <class id="14" language="java" name="vistas.MenuAjustes" project="blockbuster" 
+    file="/blockbuster/src/vistas/MenuAjustes.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="873" width="198" x="3899" y="650"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="catalogo.ListaEjemplares" project="blockbuster" 
+    file="/blockbuster/src/catalogo/ListaEjemplares.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="279" width="313" x="1837" y="1563"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="controladores.Pagar" project="blockbuster" 
+    file="/blockbuster/src/controladores/Pagar.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="226" x="1012" y="650"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="17" language="java" name="socios.ListaSocios" project="blockbuster" 
+    file="/blockbuster/src/socios/ListaSocios.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="261" width="253" x="2702" y="1563"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="18" language="java" name="socios.ListaAlquileres" project="blockbuster" 
+    file="/blockbuster/src/socios/ListaAlquileres.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="261" width="227" x="1299" y="650"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="19" language="java" name="vistas.MenuDevolver" project="blockbuster" 
+    file="/blockbuster/src/vistas/MenuDevolver.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="297" width="211" x="761" y="650"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="20" language="java" name="controladores.Reponer" project="blockbuster" 
+    file="/blockbuster/src/controladores/Reponer.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="194" x="1877" y="331"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="21" language="java" name="vistas.Tabla" project="blockbuster" file="/blockbuster/src/vistas/Tabla.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="261" width="246" x="2416" y="1563"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="22" language="java" name="vistas.MenuNuevoSocio" project="blockbuster" 
+    file="/blockbuster/src/vistas/MenuNuevoSocio.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="333" width="198" x="3661" y="650"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="23" language="java" name="controladores.ContratarTarifa" project="blockbuster" 
+    file="/blockbuster/src/controladores/ContratarTarifa.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="194" x="3111" y="331"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="24" language="java" name="vistas.MenuBuscarArt" project="blockbuster" 
+    file="/blockbuster/src/vistas/MenuBuscarArt.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="441" width="198" x="2416" y="650"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="25" language="java" name="controladores.SerieAlta" project="blockbuster" 
+    file="/blockbuster/src/controladores/SerieAlta.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="279" width="194" x="4118" y="331"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="26" language="java" name="vistas.MenuContratarTarifa" project="blockbuster" 
+    file="/blockbuster/src/vistas/MenuContratarTarifa.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="198" x="3402" y="650"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="27" language="java" name="vistas.MenuAlquilar" project="blockbuster" 
+    file="/blockbuster/src/vistas/MenuAlquilar.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="297" width="198" x="1618" y="650"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="28" language="java" name="controladores.MusicaAlta" project="blockbuster" 
+    file="/blockbuster/src/controladores/MusicaAlta.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="279" width="194" x="4381" y="331"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <package id="29" language="java" name="vistas" project="blockbuster" file="/blockbuster/src/vistas" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="50" width="101" x="1328" y="-78"/>    
+    <display autosize="true" stereotype="true" accessors="true"/>  
+  </package>  
+  <interface id="30" language="java" name="controladores.OpcionConPago" project="blockbuster" 
+    file="/blockbuster/src/controladores/OpcionConPago.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="81" width="115" x="1557" y="1563"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="31" language="java" name="vistas.MenuLogin" project="blockbuster" 
+    file="/blockbuster/src/vistas/MenuLogin.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="198" x="1517" y="-78"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="32" language="java" name="controladores.PeliculaAlta" project="blockbuster" 
+    file="/blockbuster/src/controladores/PeliculaAlta.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="279" width="194" x="4640" y="331"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="33" language="java" name="vistas.MenuMusicaAlta" project="blockbuster" 
+    file="/blockbuster/src/vistas/MenuMusicaAlta.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="423" width="198" x="4421" y="650"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="34" language="java" name="vistas.AntiguoMenuAlquilar" project="blockbuster" 
+    file="/blockbuster/src/vistas/AntiguoMenuAlquilar.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="243" width="231" x="1804" y="-78"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="35" language="java" name="controladores.TipoOpcion" project="blockbuster" 
+    file="/blockbuster/src/controladores/TipoOpcion.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="297" width="193" x="2125" y="-78"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="36" language="java" name="controladores.Opcion" project="blockbuster" 
+    file="/blockbuster/src/controladores/Opcion.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="111" x="2409" y="-78"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="37" language="java" name="controladores.NuevoSocio" project="blockbuster" 
+    file="/blockbuster/src/controladores/NuevoSocio.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="243" width="194" x="3621" y="331"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="38" language="java" name="vistas.MenuDarAlta" project="blockbuster" 
+    file="/blockbuster/src/vistas/MenuDarAlta.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="315" width="198" x="523" y="650"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="39" language="java" name="catalogo.Catalogo" project="blockbuster" 
+    file="/blockbuster/src/catalogo/Catalogo.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="495" width="243" x="4381" y="1563"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="40" language="java" name="controladores.ContrAjustes" project="blockbuster" 
+    file="/blockbuster/src/controladores/ContrAjustes.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="194" x="3855" y="331"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="41" language="java" name="vistas.MenuBuscarArtG" project="blockbuster" 
+    file="/blockbuster/src/vistas/MenuBuscarArtG.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="441" width="198" x="2157" y="650"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="42" language="java" name="controladores.Morosos" project="blockbuster" 
+    file="/blockbuster/src/controladores/Morosos.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="194" x="2643" y="331"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="43" language="java" name="vistas.MenuSerieAlta" project="blockbuster" 
+    file="/blockbuster/src/vistas/MenuSerieAlta.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="423" width="202" x="4158" y="650"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="44" language="java" name="controladores.DarBajaArt" project="blockbuster" 
+    file="/blockbuster/src/controladores/DarBajaArt.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="194" x="1044" y="331"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="45" language="java" name="controladores.BuscarArt" project="blockbuster" 
+    file="/blockbuster/src/controladores/BuscarArt.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="194" x="2409" y="331"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="46" language="java" name="vistas.MenuPagar" project="blockbuster" 
+    file="/blockbuster/src/vistas/MenuPagar.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="297" width="271" x="1012" y="1563"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <association id="47">    
+    <end type="SOURCE" refId="17" navigable="false">      
+      <attribute id="48" name="INSTANCE"/>      
+      <multiplicity id="49" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="50">    
+    <end type="SOURCE" refId="37"/>    
+    <end type="TARGET" refId="36"/>  
+  </generalization>  
+  <association id="51">    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="52" name="vista"/>      
+      <multiplicity id="53" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="27" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="54">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="36"/>  
+  </generalization>  
+  <association id="55">    
+    <bendpoint x="4127" y="650"/>    
+    <end type="SOURCE" refId="25" navigable="false">      
+      <attribute id="56" name="articulos"/>      
+      <multiplicity id="57" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="39" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="58">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="59" name="vista"/>      
+      <multiplicity id="60" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="61">    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="62" name="ejem"/>      
+      <multiplicity id="63" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="64">    
+    <bendpoint x="4390" y="650"/>    
+    <end type="SOURCE" refId="28" navigable="false">      
+      <attribute id="65" name="articulos"/>      
+      <multiplicity id="66" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="39" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="67">    
+    <end type="SOURCE" refId="18" navigable="false">      
+      <attribute id="68" name="INSTANCE"/>      
+      <multiplicity id="69" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="18" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="70">    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="71" name="vista"/>      
+      <multiplicity id="72" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="19" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="73">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="74" name="ejem"/>      
+      <multiplicity id="75" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="39" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="76">    
+    <end type="SOURCE" refId="11" navigable="false">      
+      <attribute id="77" name="INSTANCE"/>      
+      <multiplicity id="78" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="79">    
+    <end type="SOURCE" refId="40" navigable="false">      
+      <attribute id="80" name="vista"/>      
+      <multiplicity id="81" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="14" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="82">    
+    <end type="SOURCE" refId="25"/>    
+    <end type="TARGET" refId="36"/>  
+  </generalization>  
+  <association id="83">    
+    <end type="SOURCE" refId="16" navigable="false">      
+      <attribute id="84" name="parent"/>      
+      <multiplicity id="85" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="30" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="86">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="87" name="ejem"/>      
+      <multiplicity id="88" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="15" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="89">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="36"/>  
+  </generalization>  
+  <generalization id="90">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="36"/>  
+  </generalization>  
+  <association id="91">    
+    <end type="SOURCE" refId="23" navigable="false">      
+      <attribute id="92" name="listaContratos"/>      
+      <multiplicity id="93" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="94">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="36"/>  
+  </generalization>  
+  <association id="95">    
+    <end type="SOURCE" refId="42" navigable="false">      
+      <attribute id="96" name="vista"/>      
+      <multiplicity id="97" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="98">    
+    <end type="SOURCE" refId="45" navigable="false">      
+      <attribute id="99" name="vista"/>      
+      <multiplicity id="100" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="24" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="101">    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="102" name="alquileres"/>      
+      <multiplicity id="103" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="18" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="104">    
+    <bendpoint x="1587" y="650"/>    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="105" name="ejemplares"/>      
+      <multiplicity id="106" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="15" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="107">    
+    <end type="SOURCE" refId="24" navigable="false">      
+      <attribute id="108" name="tReponer"/>      
+      <multiplicity id="109" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="110">    
+    <bendpoint x="1268" y="331"/>    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="36"/>  
+  </generalization>  
+  <association id="111">    
+    <end type="SOURCE" refId="25" navigable="false">      
+      <attribute id="112" name="vista"/>      
+      <multiplicity id="113" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="43" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="114">    
+    <bendpoint x="1846" y="650"/>    
+    <end type="SOURCE" refId="20" navigable="false">      
+      <attribute id="115" name="ejemplares"/>      
+      <multiplicity id="116" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="15" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="117">    
+    <end type="SOURCE" refId="45"/>    
+    <end type="TARGET" refId="36"/>  
+  </generalization>  
+  <association id="118">    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="119" name="alquileres"/>      
+      <multiplicity id="120" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="18" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="121">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="36"/>  
+  </generalization>  
+  <generalization id="122">    
+    <end type="SOURCE" refId="42"/>    
+    <end type="TARGET" refId="36"/>  
+  </generalization>  
+  <association id="123">    
+    <end type="SOURCE" refId="23" navigable="false">      
+      <attribute id="124" name="vista"/>      
+      <multiplicity id="125" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="26" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="126">    
+    <bendpoint x="3120" y="650"/>    
+    <end type="SOURCE" refId="23" navigable="false">      
+      <attribute id="127" name="socios"/>      
+      <multiplicity id="128" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="129">    
+    <bendpoint x="1268" y="650"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="30"/>  
+  </realization>  
+  <association id="130">    
+    <bendpoint x="4649" y="650"/>    
+    <end type="SOURCE" refId="32" navigable="false">      
+      <attribute id="131" name="articulos"/>      
+      <multiplicity id="132" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="39" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="133">    
+    <bendpoint x="2126" y="650"/>    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="134" name="socios"/>      
+      <multiplicity id="135" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="136">    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="137" name="vista"/>      
+      <multiplicity id="138" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="38" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="139">    
+    <bendpoint x="2105" y="650"/>    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="140" name="socios"/>      
+      <multiplicity id="141" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="142">    
+    <end type="SOURCE" refId="20" navigable="false">      
+      <attribute id="143" name="vista"/>      
+      <multiplicity id="144" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="145">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="146" name="tReponer"/>      
+      <multiplicity id="147" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="148">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="149" name="tReponer"/>      
+      <multiplicity id="150" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="151">    
+    <end type="SOURCE" refId="23" navigable="false">      
+      <attribute id="152" name="cPagar"/>      
+      <multiplicity id="153" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="16" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="154">    
+    <end type="SOURCE" refId="37" navigable="false">      
+      <attribute id="155" name="vista"/>      
+      <multiplicity id="156" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="22" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="157">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="158" name="vista"/>      
+      <multiplicity id="159" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="41" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="160">    
+    <bendpoint x="1566" y="650"/>    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="30"/>  
+  </realization>  
+  <association id="161">    
+    <end type="SOURCE" refId="15" navigable="false">      
+      <attribute id="162" name="INSTANCE"/>      
+      <multiplicity id="163" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="15" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="164">    
+    <end type="SOURCE" refId="32" navigable="false">      
+      <attribute id="165" name="vista"/>      
+      <multiplicity id="166" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="167">    
+    <end type="SOURCE" refId="16" navigable="false">      
+      <attribute id="168" name="vista"/>      
+      <multiplicity id="169" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="46" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="170">    
+    <end type="SOURCE" refId="28"/>    
+    <end type="TARGET" refId="36"/>  
+  </generalization>  
+  <realization id="171">    
+    <bendpoint x="2385" y="650"/>    
+    <end type="SOURCE" refId="23"/>    
+    <end type="TARGET" refId="30"/>  
+  </realization>  
+  <generalization id="172">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="36"/>  
+  </generalization>  
+  <association id="173">    
+    <end type="SOURCE" refId="41" navigable="false">      
+      <attribute id="174" name="tReponer"/>      
+      <multiplicity id="175" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="176">    
+    <bendpoint x="3630" y="650"/>    
+    <end type="SOURCE" refId="37" navigable="false">      
+      <attribute id="177" name="socios"/>      
+      <multiplicity id="178" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="179">    
+    <end type="SOURCE" refId="23"/>    
+    <end type="TARGET" refId="36"/>  
+  </generalization>  
+  <association id="180">    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="181" name="cPagar"/>      
+      <multiplicity id="182" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="16" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="183">    
+    <end type="SOURCE" refId="40"/>    
+    <end type="TARGET" refId="36"/>  
+  </generalization>  
+  <generalization id="184">    
+    <end type="SOURCE" refId="32"/>    
+    <end type="TARGET" refId="36"/>  
+  </generalization>  
+  <generalization id="185">    
+    <end type="SOURCE" refId="44"/>    
+    <end type="TARGET" refId="36"/>  
+  </generalization>  
+  <association id="186">    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="187" name="tReponer"/>      
+      <multiplicity id="188" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="189">    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="190" name="cPagar"/>      
+      <multiplicity id="191" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="16" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="192">    
+    <end type="SOURCE" refId="28" navigable="false">      
+      <attribute id="193" name="vista"/>      
+      <multiplicity id="194" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="33" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="195">    
+    <end type="SOURCE" refId="39" navigable="false">      
+      <attribute id="196" name="INSTANCE"/>      
+      <multiplicity id="197" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="39" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
