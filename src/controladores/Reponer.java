@@ -92,15 +92,17 @@ public class Reponer extends Opcion {
 	 * @return array con los ids. 
 	 */
 	public int[] getIdMarcado() {
-		int numIds=0;
+		int numIds=0,x=0;
 		/*Creamos un array del tamano de las filas seleccionadas*/
 		for (int i = 0; i < vista.getJTabla().getRowCount(); i++) 
 			if (vista.getJTabla().getValueAt(i, 0).equals(true))	numIds++;
 		
 		int[] Ids = new int [numIds];	
 		for (int i = 0; i < vista.getJTabla().getRowCount(); i++) {
-			if (vista.getJTabla().getValueAt(i, 0).equals(true))
-				Ids[i] = (int) vista.getJTabla().getValueAt(i, 1);
+			if (vista.getJTabla().getValueAt(i, 0).equals(true)){
+				Ids[x] = (int) vista.getJTabla().getValueAt(i, 1);
+				x++;
+			}
 		}
 		return Ids;
 	}

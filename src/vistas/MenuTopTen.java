@@ -204,53 +204,19 @@ public class MenuTopTen extends JPanel {
 		ejem = Catalogo.getInstance();
 
 		String[] titulos = { "Puesto", "Titulo", "Veces alquilado" };
-		Object[][] filas = new Object[ejem.topTen().size()][titulos.length];
+		Object[][] filas = new Object[ejem.topTen(tipo).size()][titulos.length];
 
 		int i = 0;
-		for (Articulo e : ejem.topTen()) {
-			if (tipo.matches("Pelicula")) {
-				if (e instanceof Pelicula) {
-					for (int x = 0; x < titulos.length; x++) {
-
-						if (x == 0)
-							filas[i][x] = i+1;
-						if (x == 1)
-							filas[i][x] = e.getTitulo();
-						if (x == 2)
-							filas[i][x] = e.getVeces();
-					}
-					i++;
-				}
-			
-			} else if (tipo.matches("Musica")) {
-				if (e instanceof Musica) {
-					for (int x = 0; x < titulos.length; x++) {
-
-						if (x == 0)
-							filas[i][x] = i+1;
-						if (x == 1)
-							filas[i][x] = e.getTitulo();
-						if (x == 2)
-							filas[i][x] = e.getVeces();
-					}
-					i++;
-				}
-			
-			} else if (tipo.matches("Serie")) {
-				if (e instanceof Serie) {
-					for (int x = 0; x < titulos.length; x++) {
-
-						if (x == 0)
-							filas[i][x] = i+1;
-						if (x == 1)
-							filas[i][x] = e.getTitulo();
-						if (x == 2)
-							filas[i][x] = e.getVeces();
-					}
-					i++;
-				}
+		for (Articulo e : ejem.topTen(tipo)) {
+			for (int x = 0; x < titulos.length; x++) {
+				if (x == 0)
+					filas[i][x] = i+1;
+				if (x == 1)
+					filas[i][x] = e.getTitulo();
+				if (x == 2)
+					filas[i][x] = e.getVeces();
 			}
-
+			i++;
 		}
 		tReponer = new Tabla(filas, titulos);
 

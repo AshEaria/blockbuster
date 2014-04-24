@@ -21,12 +21,14 @@ P,1002,The Godfather,1972,Francis Ford Coppola,14
 E,2003,NO_DISPONIBLE,N
 E,2004,RETRASADO,N
 E,2000,DISPONIBLE,N
-C,Drama
+C,Drama 
 C,Mafia
 S,1007,Breaking Bad,2,1,0
 C,Accion
 C,Drama
 C,Suspense
+P,1009,fsdgj,2,k,0
+C,Comedia
 M,1010,Count on me,2,Bruno Mars,3
 E,2012,NO_DISPONIBLE,N
 E,2013,DISPONIBLE,N
@@ -41,12 +43,12 @@ E,2017,DISPONIBLE,S
 C,Accion
 C,Drama
 C,Suspense
-P,1013,La vida es bella,1997,Roberto Benigni,0
+P,1013,La vida es bella,2,Roberto Benigni,0
 E,2018,DISPONIBLE,N
 E,2019,DISPONIBLE,N
 C,Comedia
 C,Drama
-P,1014,La naranja mecanica,1971,Stanley Kubrick,0
+P,1014,La naranja mecanica,2,Stanley Kubrick,0
 E,2020,DISPONIBLE,N
 E,2021,DISPONIBLE,N
 C,Accion

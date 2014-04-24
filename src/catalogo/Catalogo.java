@@ -267,25 +267,30 @@ public class Catalogo {
 	 * @return Lista con los articulos. 
 	 */
 	@SuppressWarnings({ "unchecked", "rawtypes" })
-	public ArrayList<Articulo> topTen() {
+	public ArrayList<Articulo> topTen(String tipo) {
 		int i=0, x=0;
 		ArrayList<Articulo> todos = new ArrayList<Articulo>();
 		ArrayList<Articulo> diez = new ArrayList<Articulo>();
 	
-		todos.addAll(Catalogo.getInstance().getArticulos());
+		
+		for (Articulo a : Catalogo.getInstance().getArticulos()) {
+			if (a.getClass().getSimpleName().equals(tipo)) {
+				todos.add(a);
+			}
+		}
 		
 		Collections.sort(todos, new Comparator() {
 			
 			public int compare(Object a1, Object a2) {
-				return new Integer(((Articulo) a1).getVeces()).compareTo(new Integer(((Articulo) a2).getVeces()));
+				return ((Articulo) a2).getVeces() -((Articulo) a1).getVeces();
 			}
 
 		});
 			
-		if (todos.size() < 10) i=todos.size()-1;
-		else i=9;
+		if (todos.size() < 10) i=todos.size();
+		else i=10;
 		while ( i > 0) {
-			diez.add(x, todos.get(i));
+			diez.add(x, todos.get(x));
 			i--;
 			x++;
 		}

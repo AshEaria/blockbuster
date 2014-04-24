@@ -41,6 +41,7 @@ public class MenuBuscarArtG extends JPanel {
 	private static final long serialVersionUID = 1L;
 	
 	private JButton atras;
+	private JButton borrar;
 	/* Botones menu */
 	private JButton peliculas;
 	private JButton musica;
@@ -72,27 +73,22 @@ public class MenuBuscarArtG extends JPanel {
 		ImageIcon imAtras = new ImageIcon("atras.png");
 		atras = new JButton(imAtras);
 		atras.setBorder(null);
+		borrar = new JButton("Borrar");
+		
 
 		/* Componentes MENU INICIAL */	
 		
-		//ImageIcon imPeliculas = new ImageIcon("peliculas.png");
 		peliculas = new JButton("Peliculas");
-		//peliculas.setBorder(null);
-
-		//ImageIcon imMusica = new ImageIcon("musica.png");
 		musica = new JButton("Musica");
-		//musica.setBorder(null);
-
-		//ImageIcon imSeries = new ImageIcon("series.png");
 		series = new JButton("Series");
-		//series.setBorder(null);
 
 		/* Modificar componentes */
 		Ltitulo.setBorder(BorderFactory.createEmptyBorder(0, 0, 25, 0));
 		Ltitulo.setFont(new Font("Georgia", 40, 25));
 
 		/* Asignar nombres para Action Listener */
-		atras.setActionCommand("modoEmpleado");
+		borrar.setActionCommand("modoBorrar");
+		atras.setActionCommand("modoGerente");
 		peliculas.setActionCommand("modoPeliculas");
 		musica.setActionCommand("modoMusica");
 		series.setActionCommand("modoSeries");
@@ -109,16 +105,7 @@ public class MenuBuscarArtG extends JPanel {
 		muestraCats("Pelicula");
 
 	}
-	
-	// metodo para asignar un controlador al boton
-	public void setControlador(ActionListener c) {
 
-		controlador = c; 
-		atras.addActionListener(c);
-		peliculas.addActionListener(c);
-		musica.addActionListener(c);
-		series.addActionListener(c);
-	}
 
 	public void muestraPanel(String cat) {
 
@@ -128,7 +115,8 @@ public class MenuBuscarArtG extends JPanel {
 		Patras = new JPanel();
 		articulos = new JPanel();
 		panel = new JPanel();
-
+		
+		
 		/* Modificacion */
 		Patras.setLayout(new BoxLayout(Patras, BoxLayout.Y_AXIS));
 		Patras.setBorder(BorderFactory.createEmptyBorder(100, 1, 0, 50));
@@ -142,6 +130,8 @@ public class MenuBuscarArtG extends JPanel {
 		articulos.add(botones);
 
 		articulos.add(tabla);
+		borrar.setActionCommand("modoBorrar");
+		articulos.add(borrar);
 		Patras.add(atras);
 
 		panel.add(Patras);
@@ -153,6 +143,8 @@ public class MenuBuscarArtG extends JPanel {
 	}
 	
 	public void muestraCats(String tipo) {
+		
+		//borrar = new JButton("Borrar");
 		tipoActual = tipo;
 
 		titulo = new JPanel();
@@ -224,9 +216,10 @@ public class MenuBuscarArtG extends JPanel {
 			tit2 = "Interprete";
 		}
 		
-		String[] titulos = { "Titulo", tit1, tit2 };
+		String[] titulos = { "Titulo", tit1, tit2, "Identificador"};
 		Object[][] filas = new Object[arts.size()][titulos.length];
-
+		
+		
 		int i = 0;
 		for (Articulo e : arts) {
 			if (tipoActual.equals("Pelicula")) {
@@ -237,6 +230,8 @@ public class MenuBuscarArtG extends JPanel {
 						filas[i][x] = ((Pelicula)e).getAno();
 					if (x == 2)
 						filas[i][x] = ((Pelicula)e).getDirector();
+					if (x == 3)
+						filas[i][x] = ((Pelicula)e).getId();
 				}
 				i++;
 			} else if (tipoActual.equals("Serie")) {
@@ -247,6 +242,8 @@ public class MenuBuscarArtG extends JPanel {
 						filas[i][x] = ((Serie)e).getTemporada();
 					if (x == 2)
 						filas[i][x] = ((Serie)e).getVolumen();
+					if (x == 3)
+						filas[i][x] = ((Serie)e).getId();
 				}
 				i++;
 			} else if (tipoActual.equals("Musica")) {
@@ -257,6 +254,8 @@ public class MenuBuscarArtG extends JPanel {
 						filas[i][x] = ((Musica)e).getAno();
 					if (x == 2)
 						filas[i][x] = ((Musica)e).getInterprete();
+					if (x == 3)
+						filas[i][x] = ((Musica)e).getId();
 				}
 				i++;
 			}
@@ -273,6 +272,19 @@ public class MenuBuscarArtG extends JPanel {
 
 	}
 	
+	public JTable getCajaTabla() {
+		return Jtabla;
+	}
+	// metodo para asignar un controlador al boton
+	public void setControlador(ActionListener c) {
+
+		controlador = c; 
+		borrar.addActionListener(c);
+		atras.addActionListener(c);
+		peliculas.addActionListener(c);
+		musica.addActionListener(c);
+		series.addActionListener(c);
+	}
 	
 
 }

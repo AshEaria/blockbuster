@@ -77,7 +77,7 @@ public class MenuGerente extends JPanel {
 		
 		
 		/*Asignar nombres para Action Listener*/
-		menuBuscar.setActionCommand("MenuBuscar");
+		menuBuscar.setActionCommand("MenuBuscarG");
 		menuTopTen.setActionCommand("MenuTopTen");
 		menuAjustes.setActionCommand("MenuAjustes");
 		menuDarAlta.setActionCommand("MenuDarAlta");
