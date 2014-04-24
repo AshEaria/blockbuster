@@ -22,6 +22,9 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
+import catalogo.Musica;
+import catalogo.Pelicula;
+import catalogo.Serie;
 import aplicacion.Ajustes;
 import aplicacion.Aplicacion;
 
@@ -65,6 +68,9 @@ public class ContrAjustes extends Opcion {
 		} else if (boton.getActionCommand().equals("modoAgenerales")) {
 			((CardLayout) vista.getLayout()).show(vista, "modoAgenerales");
 
+		} else if (boton.getActionCommand().equals("modoAprestamo")) {
+			((CardLayout) vista.getLayout()).show(vista, "modoAprestamo");
+
 		} else if (boton.getActionCommand().equals("modoAtarifa")) {
 			((CardLayout) vista.getLayout()).show(vista, "modoAtarifa");
 
@@ -101,11 +107,45 @@ public class ContrAjustes extends Opcion {
 			}
 
 		} else if (boton.getActionCommand().equals("modoConfirmar2")) {
+			Ajustes ajustes = Ajustes.getInstance();
+			
+			JTextField[] cajasPrestamos = vista.getCajasPrestamo();
+			double[] valores = new double[9];
+			
+			for (int i = 0; i < 9; i++) {
+				String input = cajasPrestamos[i].getText(); 
+				if (input == null) {
+					JOptionPane.showMessageDialog(null, "Alguno de los campos esta vacio.", null, JOptionPane.ERROR_MESSAGE);
+					return;
+				}
+				try {
+					valores[i] = Double.parseDouble(input);
+				}
+				catch (NumberFormatException ex) {
+					JOptionPane.showMessageDialog(null, "Alguno de los numeros ha sido mal introducido.", null, JOptionPane.ERROR_MESSAGE);
+					return;
+				}
+			}
+			
+			Pelicula.setPrecio(valores[0]);
+			Serie.setPrecio(valores[1]);
+			Musica.setPrecio(valores[2]);
+			ajustes.setPenalRetraso1(valores[3]);
+			ajustes.setDiasNivelRetraso((int) valores[4]);
+			ajustes.setPenalRetraso2(valores[5]);
+			ajustes.setDias((int) valores[6]);
+			ajustes.setDiasPlus((int) valores[7]);
+			ajustes.setMaxArticulos((int) valores[8]);
+			
+			JOptionPane.showMessageDialog(null, "Ajustes modificados correctamente.", null, JOptionPane.INFORMATION_MESSAGE);
+
+			ContrAjustes cAjustes = new ContrAjustes();
+			vista.add(cAjustes.getVista(), "c");
+			((CardLayout) vista.getLayout()).show(vista, "c");
+		} else if (boton.getActionCommand().equals("modoConfirmar3")) {
 			
 			JTextField[] cajasPrecios = vista.getPreciosTarifas();
 			double[] precios = new double[8];
-			
-			boolean numOK = false;
 			
 			for (int i = 0; i < 8; i++) {
 				String input = cajasPrecios[i].getText(); 
