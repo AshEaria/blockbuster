@@ -3,7 +3,6 @@
  */
 package vistas;
 
-import java.awt.BorderLayout;
 import java.awt.CardLayout;
 import java.awt.Font;
 import java.awt.GridBagLayout;
@@ -40,7 +39,8 @@ public class MenuAjustes extends JPanel {
 	private JButton atrasAju1;
 	private JButton atrasAju2;
 	private JButton atrasAju3;
-	private JButton confirmarG;
+	private JButton confirmarG1;
+	private JButton confirmarG2;
 	private JButton confirmarT;
 	private JButton confirmarP; 
 	
@@ -83,7 +83,6 @@ public class MenuAjustes extends JPanel {
 	
 
 	public MenuAjustes() {
-
 		/* Menu reponer */
 		this.setLayout(new CardLayout());
 
@@ -93,15 +92,6 @@ public class MenuAjustes extends JPanel {
 		ImageIcon imAtras = new ImageIcon("atras.png");
 		atras = new JButton(imAtras);
 		atras.setBorder(null);
-		
-		ImageIcon imAtras2 = new ImageIcon("atras.png");
-		atrasAju1 = new JButton(imAtras2);
-		atrasAju1.setBorder(null);
-		atrasAju2 = new JButton(imAtras2);
-		atrasAju2.setBorder(null);
-		atrasAju3 = new JButton(imAtras2);
-		atrasAju3.setBorder(null);
-		
 
 		/* Componentes MENU INICIAL */
 
@@ -120,9 +110,6 @@ public class MenuAjustes extends JPanel {
 		/* Modificar componentes */
 
 		/* Asignar nombres para Action Listener */
-		atrasAju1.setActionCommand("modoAjustes");
-		atrasAju2.setActionCommand("modoAjustes");
-		atrasAju3.setActionCommand("modoAjustes");
 		atras.setActionCommand("modoGerente");
 		Agenerales.setActionCommand("modoAgenerales");
 		Aprestamo.setActionCommand("modoAprestamo");
@@ -138,16 +125,15 @@ public class MenuAjustes extends JPanel {
 		/* Modificacion */
 		// botones.setLayout(new BoxLayout(panel, BoxLayout.X_AXIS));
 		panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
-		Patras.setBorder(BorderFactory.createEmptyBorder(0, 0, 0, 550));
-		//botones.setBorder(BorderFactory.createEmptyBorder(0, 0, 0, 0));
+		//Patras.setBorder(BorderFactory.createEmptyBorder(0, 0, 0, 550));
+		//botones.setBorder(BorderFactory.createEmptyBorder(0, 0, 50, 0));
 
 		botones.add(Agenerales);
 		botones.add(Aprestamo);
 		botones.add(Atarifa);
 		Patras.add(atras);
-		panel.add(Patras, BorderLayout.NORTH);
+		panel.add(Patras);
 		panel.add(botones);
-
 		/* Anadir el panel PRINCIPAL al cardLAyout PRINCIPAL */
 		this.add(panel, "PAjustes");
 		this.add(ajustesGenerales(), "modoAgenerales");
@@ -156,7 +142,8 @@ public class MenuAjustes extends JPanel {
 		
 		/* Mostrar menu inicialmente */
 		((CardLayout) this.getLayout()).show(this, "PAjustes");
-
+		
+		
 	}
 
 	/* Panel AJUSTES GENERALES */
@@ -165,18 +152,25 @@ public class MenuAjustes extends JPanel {
 		/* Inicializacion de componentes */
 
 		/* Texto */
-		JLabel titulo1 = new JLabel("Cambio de nombre del videoblub");
+		JLabel titulo1 = new JLabel("Cambio de nombre del videoclub");
 		JLabel titulo2 = new JLabel("Cambio de contrasena");
 		JLabel nActual = new JLabel(Ajustes.getInstance().getNombreVideoclub());
 		JLabel nNuevo = new JLabel("Nombre nuevo:");
 		JLabel cActual = new JLabel("Contrasena antigua:");
 		JLabel cNueva = new JLabel("Contrasena nueva:");
-		
+
 		/* Botones */
-		
+
 		ImageIcon imConf = new ImageIcon("confirmar.png");
-		confirmarG = new JButton(imConf);
-		confirmarG.setBorder(null);
+		confirmarG1 = new JButton(imConf);
+		confirmarG1.setBorder(null);
+		confirmarG2 = new JButton(imConf);
+		confirmarG2.setBorder(null);
+		
+
+		ImageIcon imAtras2 = new ImageIcon("atras.png");
+		atrasAju1 = new JButton(imAtras2);
+		atrasAju1.setBorder(null);
 
 		/* Campos de texto */
 		nombre = new JTextField(10);
@@ -188,51 +182,66 @@ public class MenuAjustes extends JPanel {
 		JPanel Pcontrasena = new JPanel();
 		JPanel Pcentro = new JPanel();
 		JPanel panel = new JPanel();
-		
+		JPanel PTnombre = new JPanel();
+		JPanel PTcontrA = new JPanel();
+		JPanel PTcontrN = new JPanel();
+		JPanel PTconfirmar1 = new JPanel();
+		JPanel PTconfirmar2 = new JPanel();
+
 		/* Asignar nombres para Action Listener */
-		confirmarG.setActionCommand("modoConfirmar1");
+		confirmarG1.setActionCommand("modoConfirmarG1");
+		confirmarG2.setActionCommand("modoConfirmarG2");
+		atrasAju1.setActionCommand("modoAjustes");
 
 		/* Modificar componentes */
-	
+
 		titulo1.setBorder(BorderFactory.createEmptyBorder(0, 0, 25, 0));
 		titulo1.setFont(new Font("Georgia", Font.HANGING_BASELINE, 30));
 
 		titulo2.setBorder(BorderFactory.createEmptyBorder(25, 0, 15, 0));
 		titulo2.setFont(new Font("Georgia", Font.HANGING_BASELINE, 30));
-		
-		nActual.setBorder(BorderFactory.createEmptyBorder(0, 0, 25, 0));
+
+		nActual.setBorder(BorderFactory.createEmptyBorder(0, 150, 25, 0));
 		nActual.setFont(new Font("Georgia", 40, 40));
 		nNuevo.setBorder(BorderFactory.createEmptyBorder(0, 0, 10, 0));
 		cActual.setBorder(BorderFactory.createEmptyBorder(5, 0, 10, 0));
 		cNueva.setBorder(BorderFactory.createEmptyBorder(0, 0, 10, 0));
-	    Pcentro.setBorder(BorderFactory.createEmptyBorder(25, 25, 5, 55));
-	    confirmarG.setBorder(BorderFactory.createEmptyBorder(25, 0, 0, 0));
-	
+		//Pcentro.setBorder(BorderFactory.createEmptyBorder(25, 25, 5, 55));
+
 		Pnombre.setLayout(new BoxLayout(Pnombre, BoxLayout.Y_AXIS));
+		// PTnombre.setLayout(new BoxLayout(PTnombre, BoxLayout.X_AXIS));
 		Pcontrasena.setLayout(new BoxLayout(Pcontrasena, BoxLayout.Y_AXIS));
 		Pcentro.setLayout(new BoxLayout(Pcentro, BoxLayout.Y_AXIS));
 		panel.setLayout(new BoxLayout(panel, BoxLayout.X_AXIS));
 
-		/* Anadir componentes a sus respectivos paneles */
+		/* AÃ±adir componentes a sus respectivos paneles */
+		/* Nombre */
+
 		Pnombre.add(titulo1);
 		Pnombre.add(nActual);
-		Pnombre.add(nNuevo);
-		Pnombre.add(nombre);
-		Pnombre.add(confirmarG);
+		PTnombre.add(nNuevo);
+		PTnombre.add(nombre);
+		Pnombre.add(PTnombre);
+		PTconfirmar1.add(confirmarG1);
+		Pnombre.add(PTconfirmar1);
 
+		/* Contrasena */
 		Pcontrasena.add(titulo2);
-		Pcontrasena.add(cActual);
-		Pcontrasena.add(cActualT);
-		Pcontrasena.add(cNueva);
-		Pcontrasena.add(cNuevaT);
-		Pcontrasena.add(confirmarG);
+		PTcontrA.add(cActual);
+		PTcontrA.add(cActualT);
+		Pcontrasena.add(PTcontrA);
+		PTcontrN.add(cNueva);
+		PTcontrN.add(cNuevaT);
+		Pcontrasena.add(PTcontrN);
+		PTconfirmar2.add(confirmarG2);
+		Pcontrasena.add(PTconfirmar2);
 
 		Pcentro.add(Pnombre);
 		Pcentro.add(Pcontrasena);
 
 		panel.add(atrasAju1);
 		panel.add(Pcentro);
-		
+
 		return panel;
 
 	}
@@ -249,7 +258,7 @@ public class MenuAjustes extends JPanel {
 		JLabel titulo1 = new JLabel("Precios por uso");
 		JLabel titulo2 = new JLabel("Penalizaciones por retraso");
 		JLabel titulo3 = new JLabel("Dias de alquiler");
-		JLabel[] eurosMes = { new JLabel(" €/ud."), new JLabel(" €/ud."), new JLabel(" €/ud."), new JLabel(" €/dia"), new JLabel(" dias"), new JLabel(" €/dia"), new JLabel(" dias"), new JLabel(" dias"), new JLabel(" articulos") };
+		JLabel[] eurosMes = { new JLabel(" ï¿½/ud."), new JLabel(" ï¿½/ud."), new JLabel(" ï¿½/ud."), new JLabel(" ï¿½/dia"), new JLabel(" dias"), new JLabel(" ï¿½/dia"), new JLabel(" dias"), new JLabel(" dias"), new JLabel(" articulos") };
 		JLabel peliculas = new JLabel("Peliculas: ");
 		JLabel series = new JLabel("Series: ");
 		JLabel musica = new JLabel("Musica: "); 
@@ -265,6 +274,11 @@ public class MenuAjustes extends JPanel {
 		ImageIcon imConf = new ImageIcon("confirmar.png");
 		confirmarP = new JButton(imConf);
 		confirmarP.setBorder(null);
+		
+
+		ImageIcon imAtras2 = new ImageIcon("atras.png");
+		atrasAju2 = new JButton(imAtras2);
+		atrasAju2.setBorder(null);
 
 		/* Campos de texto */
 		pPeliculas = new JTextField("" + p.getPrecio()); 
@@ -296,22 +310,23 @@ public class MenuAjustes extends JPanel {
 		
 		/* Asignar nombres para Action Listener */
 		confirmarP.setActionCommand("modoConfirmar2");
+		atrasAju2.setActionCommand("modoAjustes");
 
 		/* Modificar componentes */
 		
-		titAjustes.setBorder(BorderFactory.createEmptyBorder(0, 0, 0, 0));
+		//titAjustes.setBorder(BorderFactory.createEmptyBorder(0, 0, 0, 0));
 		titAjustes.setFont(new Font("Georgia", 40, 40));
 		
-		titulo1.setBorder(BorderFactory.createEmptyBorder(20, 0, 25, 47));
+		titulo1.setBorder(BorderFactory.createEmptyBorder(0, 0, 25, 0));
 		titulo1.setFont(new Font("Georgia", Font.HANGING_BASELINE, 30));
 
-		titulo2.setBorder(BorderFactory.createEmptyBorder(20, 0, 25, 80));
+		titulo2.setBorder(BorderFactory.createEmptyBorder(0, 0, 25, 0));
 		titulo2.setFont(new Font("Georgia", Font.HANGING_BASELINE, 30));
 		
-		titulo3.setBorder(BorderFactory.createEmptyBorder(20, 15, 7, 15));
+		titulo3.setBorder(BorderFactory.createEmptyBorder(0, 15, 7, 0));
 		titulo3.setFont(new Font("Georgia", Font.HANGING_BASELINE, 30));
 		
-	    Pcentro.setBorder(BorderFactory.createEmptyBorder(25, 25, 5, 55));
+	    //Pcentro.setBorder(BorderFactory.createEmptyBorder(25, 25, 5, 55));
 	    confirmarP.setBorder(BorderFactory.createEmptyBorder(25, 0, 0, 0));
 
 	    Ptit.setLayout(new GridBagLayout());
@@ -367,11 +382,11 @@ public class MenuAjustes extends JPanel {
 		Pplus.add(sinPlus);
 		Pplus.add(pDias);
 		Pplus.add(eurosMes[6]);
-		Pplus.add(Box.createHorizontalStrut(40));
+		Pplus.add(Box.createHorizontalStrut(20));
 		Pplus.add(plus); 
 		Pplus.add(pDiasPlus); 
 		Pplus.add(eurosMes[7]);
-		Pplus.add(Box.createHorizontalStrut(60));
+		Pplus.add(Box.createHorizontalStrut(30));
 		Pplus.add(maxAlq);
 		Pplus.add(pAlqs);
 		Pplus.add(eurosMes[8]);
@@ -408,7 +423,7 @@ public class MenuAjustes extends JPanel {
 		JLabel titulo3 = new JLabel("Premium");
 		JLabel[] eurosMes = new JLabel[8];
 		for (int i = 0; i < 8; i++) {
-			eurosMes[i] = new JLabel(" €/mes");
+			eurosMes[i] = new JLabel(" ï¿½/mes");
 		}
 		JLabel peliculas = new JLabel("Peliculas: ");
 		JLabel series = new JLabel("Series: ");
@@ -423,7 +438,12 @@ public class MenuAjustes extends JPanel {
 		ImageIcon imConf = new ImageIcon("confirmar.png");
 		confirmarT = new JButton(imConf);
 		confirmarT.setBorder(null);
+		
 
+		ImageIcon imAtras2 = new ImageIcon("atras.png");
+		atrasAju3 = new JButton(imAtras2);
+		atrasAju3.setBorder(null);
+		
 		/* Campos de texto */
 		cPeliculas = new JTextField("" + p.getPrecio()); 
 		cSeries = new JTextField("" + s.getPrecio()); 
@@ -453,6 +473,7 @@ public class MenuAjustes extends JPanel {
 		
 		/* Asignar nombres para Action Listener */
 		confirmarT.setActionCommand("modoConfirmar3");
+		atrasAju3.setActionCommand("modoAjustes");
 
 		/* Modificar componentes */
 		
@@ -472,7 +493,7 @@ public class MenuAjustes extends JPanel {
 		plus.setFont(new Font("Georgia", Font.HANGING_BASELINE, 30));
 		
 	    Pcentro.setBorder(BorderFactory.createEmptyBorder(25, 25, 5, 55));
-	    confirmarT.setBorder(BorderFactory.createEmptyBorder(25, 0, 0, 0));
+	   // confirmarT.setBorder(BorderFactory.createEmptyBorder(25, 0, 0, 0));
 
 	    Ptit.setLayout(new GridBagLayout());
 		Psencilla.setLayout(new BoxLayout(Psencilla, BoxLayout.Y_AXIS));
@@ -568,16 +589,20 @@ public class MenuAjustes extends JPanel {
 	
 	// metodo para asignar un controlador al boton
 	public void setControlador(ActionListener c) {
-
-		confirmarG.addActionListener(c);
-		confirmarT.addActionListener(c);
-		confirmarP.addActionListener(c);
-		atrasAju1.addActionListener(c);
-		atrasAju2.addActionListener(c);
-		atrasAju3.addActionListener(c);
+		
 		atras.addActionListener(c);
+		confirmarG1.addActionListener(c);
+		confirmarG2.addActionListener(c);
+		atrasAju1.addActionListener(c);
 		Agenerales.addActionListener(c);
+		atrasAju3.addActionListener(c);
+		
+		confirmarP.addActionListener(c);
+		atrasAju2.addActionListener(c);
 		Aprestamo.addActionListener(c);
+		
+		
+		confirmarT.addActionListener(c);
 		Atarifa.addActionListener(c);
 	}
 

@@ -33,7 +33,7 @@ import catalogo.Serie;
  * 
  * @author Elena Lechuga y Jaime Monedero
  */
-public class MenuBuscarArt extends JPanel {
+public class MenuBuscarArtG extends JPanel {
 
 	/**
 	 * 
@@ -61,7 +61,7 @@ public class MenuBuscarArt extends JPanel {
 	private String tipoActual; 
 	private ActionListener controlador;
 	
-	public MenuBuscarArt(ActionListener c) {
+	public MenuBuscarArtG (ActionListener c) {
 
 		/* Menu General */
 		this.setLayout(new CardLayout());
@@ -73,8 +73,8 @@ public class MenuBuscarArt extends JPanel {
 		atras = new JButton(imAtras);
 		atras.setBorder(null);
 
-		/* Componentes MENU INICIAL */
-
+		/* Componentes MENU INICIAL */	
+		
 		//ImageIcon imPeliculas = new ImageIcon("peliculas.png");
 		peliculas = new JButton("Peliculas");
 		//peliculas.setBorder(null);

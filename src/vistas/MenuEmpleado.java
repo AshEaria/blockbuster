@@ -17,7 +17,7 @@ public class MenuEmpleado extends JPanel {
 	 */
 	private static final long serialVersionUID = 1L;
 	
-
+	private JButton menuBuscar;
 	private JButton menuAlquilar;
 	private JButton menuContrTarifa;
 	private JButton menuReponer;
@@ -30,6 +30,7 @@ public class MenuEmpleado extends JPanel {
 	private JLabel LDevolver;
 	private JLabel LNewSocio;
 	private JLabel LSalir;
+	private JLabel LBuscar;
 	
 	public MenuEmpleado() {
 		
@@ -45,6 +46,7 @@ public class MenuEmpleado extends JPanel {
 		ImageIcon imReponer = new ImageIcon("reponer.png"); 
 		ImageIcon imNewSocio = new ImageIcon("newSocio.png"); 
 		ImageIcon imSalir = new ImageIcon("salir.png"); 
+		ImageIcon imBuscar = new ImageIcon("buscar.png");
 		
 		/*Botones*/
 		menuAlquilar = new JButton(imAlquilar);
@@ -53,6 +55,7 @@ public class MenuEmpleado extends JPanel {
 		menuDevolver = new JButton(imDevolver);
 		menuNewSocio = new JButton(imNewSocio);
 		menuSalir = new JButton(imSalir);
+		menuBuscar = new JButton(imBuscar);
 		
 		/*Texto*/
 		LAlquilar = new JLabel("Alquilar");
@@ -61,6 +64,7 @@ public class MenuEmpleado extends JPanel {
 		LDevolver = new JLabel("Devolver");
 		LNewSocio = new JLabel("Nuevo Socio");
 		LSalir = new JLabel("Salir");
+		LBuscar = new JLabel("Buscar articulo");
 		
 		/*Modificar componentes*/
 		
@@ -70,6 +74,7 @@ public class MenuEmpleado extends JPanel {
 		menuDevolver.setBorder(null);
 		menuNewSocio.setBorder(null);
 		menuSalir.setBorder(null);
+		menuBuscar.setBorder(null);
 		
 		//LAlquilar.setHorizontalAlignment(HEIGHT);
 	
@@ -83,6 +88,7 @@ public class MenuEmpleado extends JPanel {
 		menuDevolver.setActionCommand("MenuDevolver");
 		menuNewSocio.setActionCommand("MenuNewSocio");
 		menuSalir.setActionCommand("MenuSalir");
+		menuBuscar.setActionCommand("MenuBuscar");
 	
 		/*CREAR PANELES*/
 		
@@ -98,6 +104,7 @@ public class MenuEmpleado extends JPanel {
 		JPanel PDevolver = new JPanel();
 		JPanel PNewSocio = new JPanel();
 		JPanel PSalir = new JPanel();
+		JPanel PBuscar = new JPanel();
 		
 			
 		/*Modoficar paneles externos*/
@@ -113,6 +120,7 @@ public class MenuEmpleado extends JPanel {
 		PDevolver.setLayout(new BoxLayout(PDevolver, BoxLayout.Y_AXIS));
 		PNewSocio.setLayout(new BoxLayout(PNewSocio, BoxLayout.Y_AXIS));
 		PSalir.setLayout(new BoxLayout(PSalir, BoxLayout.Y_AXIS));
+		PBuscar.setLayout(new BoxLayout(PBuscar, BoxLayout.Y_AXIS));
 		
 		PALquilar.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
 		PContrTarifa.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
@@ -120,15 +128,20 @@ public class MenuEmpleado extends JPanel {
 		PDevolver.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
 		PNewSocio.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
 		PSalir.setBorder(BorderFactory.createEmptyBorder(40, 40, 40, 40));
+		PBuscar.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
 		
 		panel.setLayout(new BorderLayout());
 		panel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
+		fila2.setBorder(BorderFactory.createEmptyBorder(0, 105, 0, 0));
 		
 		/*Fondo de la aplicacion*/
 		//this.setBackground(new Color(0xBCF5A9));
 		
 		/*AÑADIR COMPONENTES*/
 		/*Añadir componentes al panel de cada boton*/
+		PBuscar.add(menuBuscar);
+		PBuscar.add(LBuscar);
+		
 		PALquilar.add(menuAlquilar);
 		PALquilar.add(LAlquilar);
 		
@@ -148,6 +161,7 @@ public class MenuEmpleado extends JPanel {
 		PSalir.add(LSalir);
 		
 		/* Añadir componentes al panel FILA1 */
+		fila1.add(PBuscar);
 		fila1.add(PALquilar);
 		fila1.add(PContrTarifa);
 		fila1.add(PReponer);
@@ -172,6 +186,8 @@ public class MenuEmpleado extends JPanel {
 	
 	// m�todo para asignar un controlador al bot�n
 	public void setControlador(ActionListener c) {
+		
+		menuBuscar.addActionListener(c);
 		menuAlquilar.addActionListener(c);
 		menuContrTarifa.addActionListener(c);
 		menuReponer.addActionListener(c);

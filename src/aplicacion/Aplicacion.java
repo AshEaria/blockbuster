@@ -23,6 +23,7 @@ import javax.swing.JTextField;
 
 import controladores.Alquilar;
 import controladores.BuscarArt;
+import controladores.BuscarArtG;
 import controladores.ContrAjustes;
 import controladores.ContratarTarifa;
 import controladores.DarAltaArt;
@@ -487,7 +488,13 @@ public class Aplicacion implements ActionListener, WindowListener {
 	public void actionPerformed(ActionEvent boton) {
 		/* De Empleado */
 
-		if (boton.getActionCommand().equals("MenuAlquilar")) {
+		if (boton.getActionCommand().equals("MenuBuscar")) {
+			/* Cambiamos al panel MenuEmpleado */
+			BuscarArt cBuscarArt = new BuscarArt();
+			vista.add(cBuscarArt.getVista(), "MenuBuscar");
+			((CardLayout) vista.getLayout()).show(vista, "MenuBuscar");
+
+		} else if (boton.getActionCommand().equals("MenuAlquilar")) {
 			/* Creamos el panel MenuAlquilar, lo anadimos y lo mostramos */
 			Alquilar cAlquilar = new Alquilar();
 			if (cAlquilar.getVista() == null) return; /* El numero de socio era erroneo */
@@ -528,9 +535,9 @@ public class Aplicacion implements ActionListener, WindowListener {
 
 		/* De Gerente */
 
-		if (boton.getActionCommand().equals("MenuBuscar")) {
+		if (boton.getActionCommand().equals("MenuBuscarG")) {
 			/* Cambiamos al panel MenuEmpleado */
-			BuscarArt cBuscarArt = new BuscarArt();
+			BuscarArtG cBuscarArt = new BuscarArtG();
 			vista.add(cBuscarArt.getVista(), "MenuBuscar");
 			((CardLayout) vista.getLayout()).show(vista, "MenuBuscar");
 

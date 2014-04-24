@@ -12,15 +12,11 @@ import socios.TarifaPremium;
 import socios.TarifaSM;
 import socios.TarifaSerie;
 import vistas.MenuAjustes;
-
 import java.awt.CardLayout;
 import java.awt.event.ActionEvent;
-import java.util.Calendar;
-
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
-
 import catalogo.Musica;
 import catalogo.Pelicula;
 import catalogo.Serie;
@@ -72,33 +68,42 @@ public class ContrAjustes extends Opcion {
 		} else if (boton.getActionCommand().equals("modoAjustes")) {
 			((CardLayout) vista.getLayout()).show(vista, "PAjustes");
 
-		} else if (boton.getActionCommand().equals("modoConfirmar1")) {
-
-			if (vista.getCajaNnuevo().getText().isEmpty()
-					&& (vista.getCajacNueva().getText().isEmpty()))
-				JOptionPane.showMessageDialog(null, "Campos vacios.", null,
+		}else if (boton.getActionCommand().equals("modoConfirmarG1")) {
+			/* Confirmar NOMBRE*/
+			if (vista.getCajaNnuevo().getText().isEmpty())
+				JOptionPane.showMessageDialog(null, "Campo de nombre vacio.", null,
 						JOptionPane.INFORMATION_MESSAGE);
 			else {
 				cambioDeNombre();
-				if (!vista.getCajaNnuevo().getText().isEmpty())
-					JOptionPane.showMessageDialog(null,
-							"Nombre modificado correctamente.", null,
-							JOptionPane.INFORMATION_MESSAGE);
+				
+				ContrAjustes cAjustes = new ContrAjustes();
+				vista.add(cAjustes.getVista(), "c");
+				((CardLayout) vista.getLayout()).show(vista, "c");
 
+			}
+
+		}else if (boton.getActionCommand().equals("modoConfirmarG2")) {
+			/* Confirmar CONTRASEÑA */
+			if (vista.getCajacNueva().getText().isEmpty())
+				JOptionPane.showMessageDialog(null, "Campos de contraseña vacios.", null,
+						JOptionPane.INFORMATION_MESSAGE);
+			else {
+				
 				if (cambioDeContrasena() == false) {
 					limpiaCampos();
 					JOptionPane.showMessageDialog(null,
 							"La contrasena no coincide", null,
 							JOptionPane.ERROR_MESSAGE);
-				} else
+				} else{
 					JOptionPane.showMessageDialog(null,
 							"Contrasena modificada correctamente.", null,
 							JOptionPane.INFORMATION_MESSAGE);
 
+				
 				ContrAjustes cAjustes = new ContrAjustes();
 				vista.add(cAjustes.getVista(), "c");
 				((CardLayout) vista.getLayout()).show(vista, "c");
-
+				}
 			}
 
 		} else if (boton.getActionCommand().equals("modoConfirmar2")) {
