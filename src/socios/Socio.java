@@ -295,6 +295,51 @@ public class Socio {
 	/* SETTERS */
 	
 	/**
+	 * Metodo de modificacion del DNI. 
+	 * 
+	 * @param dni Nuevo DNI. 
+	 */
+	public void setDni(String dni) {
+		this.dni = dni;
+	}
+
+	/**
+	 * Metodo de modificacion del nombre. 
+	 * 
+	 * @param nombre Nuevo nombre. 
+	 */
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	/**
+	 * Metodo de modificacion del numero de telefono. 
+	 * 
+	 * @param telefono Nuevo telefono. 
+	 */
+	public void setTelefono(String telefono) {
+		this.telefono = telefono;
+	}
+
+	/**
+	 * Metodo de modificacion del email. 
+	 * 
+	 * @param email Nuevo email. 
+	 */
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	/**
+	 * Metodo de modificacion de la direccion. 
+	 * 
+	 * @param direccion Nueva direccion. 
+	 */
+	public void setDireccion(String direccion) {
+		this.direccion = direccion;
+	}
+
+	/**
 	 * Setter del ultimo id asignado, a utilizar durante la inicializacion. 
 	 * 
 	 * @param lastId Nuevo "ultimo id asignado", sacado de archivo

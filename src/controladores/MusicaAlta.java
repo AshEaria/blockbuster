@@ -97,9 +97,10 @@ public class MusicaAlta extends Opcion {
 	public JPanel getVista() {
 		return (JPanel) vista;
 	}
-
-	// TODO Javadoc altaMusica
 	
+	/**
+	 * Efectua la operacion de creacion de la pelicula, anadiendola a la base de datos. 
+	 */
 	public void altaMusica() {
 		/* Añadir articulo al catalogo */
 		int id = articulos.crearMusica(titulo.getText(),
