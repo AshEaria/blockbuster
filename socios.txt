@@ -1,5 +1,11 @@
 10,10
-1, 14780011B, Lucia, 941578862, luci@gmail.es, C/De los Lavajos Madrid,-1,SIN_ALQUILERES,0
-2, 41578914J, Cristina, 644881522, cris@gmail.es, C/Del jazmin Andalucia,-1,SIN_ALQUILERES,0
-3, 77777741Z, Pedro, 611484771, pe@gmail.es, Av Del Espartal Guadalajara,-1,SIN_ALQUILERES,0
-4, 00147991P, Carlos, 644784121, carl@gmail.es, Plaza De Espana Madrid,-1,MOROSO,2,3002,3003
+1,14780011B,Lucia,941578862,luci@gmail.es,C/De los Lavajos Madrid,4011,CON_ALQUILERES,1,3004
+2,41578914J,Cristina,644881522,cris@gmail.es,C/Del jazmin Andalucia,-1,SIN_ALQUILERES,0
+3,77777741Z,Pedro,611484771,pe@gmail.es,Av Del Espartal Guadalajara,4009,SIN_ALQUILERES,0
+4,00147991P,Carlos,644784121,carl@gmail.es,Plaza De Espana Madrid,-1,MOROSO,2,3002,3003
+5,12484410E,Rita,611484577,rit@gmail.es,C/ De la fuente Barcelona,-1,SIN_ALQUILERES,0
+6,51496551B,Jaime,625789543,jor@yahoo.com,Paseo de la Castellana,-1,SIN_ALQUILERES,0
+7,68432156X,Marta,687541235,martita@hotmail.com,C/ Sevilla,4010,SIN_ALQUILERES,0
+8,64813484T,Julio,678945213,jules@gmail.com,C/ Madrid,-1,SIN_ALQUILERES,0
+9,945877c,Mario,681170523,dksfjh@hotmail.com,marte,-1,SIN_ALQUILERES,0
+10,23456783V,Guillermo,650392511,aslkdfj@aslkdfj.com,C/Guadarrama 8,-1,SIN_ALQUILERES,0

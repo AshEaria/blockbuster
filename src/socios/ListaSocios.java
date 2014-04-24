@@ -147,11 +147,19 @@ public class ListaSocios {
 	 * @param numSocio id del socio que se busca
 	 * @return Objeto Socio correspondiente si ha encontrado su numSocio, null en caso contrario
 	 */
-
 	public Socio encuentra(int numSocio) {
 		if (numSocio == -1) return null;
 		for (Socio s : socios) {
 			if (s.getNumSocio() == numSocio)
+				return s;
+		}
+		return null;
+	}
+	
+	public Socio encuentra(String dniSocio) {
+		if (dniSocio == null) return null;
+		for (Socio s : socios) {
+			if (s.getDni().equals(dniSocio))
 				return s;
 		}
 		return null;

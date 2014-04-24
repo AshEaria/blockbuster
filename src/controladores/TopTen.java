@@ -33,8 +33,6 @@ public class TopTen extends Opcion {
 		((MenuTopTen) vista).setControlador(this);
 
 	}
-
-	// TODO TopTen no da los articulos correctos. 
 	
 	/**
 	 * @see

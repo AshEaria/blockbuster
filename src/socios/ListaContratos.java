@@ -181,6 +181,7 @@ public class ListaContratos {
 		
 		if(!(contratos.remove(tar))) return false;
 
+		numTarifas--;
 		return true;
 	}
 

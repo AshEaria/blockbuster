@@ -64,7 +64,7 @@ public class MenuTopTen extends JPanel {
 		peliculas = new JButton(imPeliculas);
 		peliculas.setBorder(null);
 
-		ImageIcon imMusica = new ImageIcon("musica.png");
+		ImageIcon imMusica = new ImageIcon("musicas.png");
 		musica = new JButton(imMusica);
 		musica.setBorder(null);
 

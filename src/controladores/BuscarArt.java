@@ -45,8 +45,8 @@ public class BuscarArt extends Opcion {
 			vista.muestraCats("Serie");
 			
 		} else if (boton.getActionCommand().equals("modoEmpleado")) {
-			/* Volvemo al panel MenuGerente */
-			Aplicacion.vuelveMenuGerente();
+			/* Volvemo al panel MenuEmpleado */
+			Aplicacion.vuelveMenuEmpleado();
 
 		} else { /* Boton de categoria */
 			

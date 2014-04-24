@@ -24,6 +24,7 @@ import javax.swing.JTextField;
 import controladores.Alquilar;
 import controladores.BuscarArt;
 import controladores.BuscarArtG;
+import controladores.BuscarSocio;
 import controladores.ContrAjustes;
 import controladores.ContratarTarifa;
 import controladores.DarAltaArt;
@@ -514,6 +515,13 @@ public class Aplicacion implements ActionListener, WindowListener {
 			vista.add(cReponer.getVista(), "MenuReponer");
 			((CardLayout) vista.getLayout()).show(vista, "MenuReponer");
 
+		} else if (boton.getActionCommand().equals("MenuBuscarSocio")) {
+			/* Cambiamos al panel BuscarSocio */
+			BuscarSocio cBuscarSocio = new BuscarSocio();
+			if (cBuscarSocio.getVista() == null) return; /* El DNI de socio era erroneo */
+			vista.add(cBuscarSocio.getVista(), "MenuBuscarSocio");
+			((CardLayout) vista.getLayout()).show(vista, "MenuBuscarSocio");
+
 		} else if (boton.getActionCommand().equals("MenuDevolver")) {
 			/* Cambiamos al panel MenuGerente */
 			Devolver cDevolver = new Devolver();
@@ -528,9 +536,8 @@ public class Aplicacion implements ActionListener, WindowListener {
 			((CardLayout) vista.getLayout()).show(vista, "MenuNewSocio");
 
 		} else if (boton.getActionCommand().equals("MenuSalir")) {
-			/* Cambiamos al panel MenuGerente */
+			/* Cambiamos al panel Login */
 			((CardLayout) vista.getLayout()).show(vista, "PLogin");
-
 		}
 
 		/* De Gerente */

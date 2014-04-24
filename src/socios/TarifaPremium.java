@@ -43,7 +43,7 @@ public class TarifaPremium extends Tarifa {
 	
 	@Override
 	public String toString() {
-		return "TPRE,"+ getId() +","+ getSocio().getNumSocio() + "," +  getFechaInicio().get(Calendar.DAY_OF_MONTH)+"."+(getFechaInicio().get(Calendar.MONTH)+1)+"."+getFechaInicio().get(Calendar.YEAR)+ "," 
+		return "TPRE,"+ getId() +","+ getSocio().getNumSocio() + "," + getFechaInicio().get(Calendar.DAY_OF_MONTH)+"."+(getFechaInicio().get(Calendar.MONTH)+1)+"."+getFechaInicio().get(Calendar.YEAR)+ "," 
 				+ getFechaFin().get(Calendar.DAY_OF_MONTH)+"."+(getFechaFin().get(Calendar.MONTH)+1)+"."+getFechaFin().get(Calendar.YEAR)+","+toPlus();
 	}
 	

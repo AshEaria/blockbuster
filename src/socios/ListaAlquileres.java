@@ -181,6 +181,7 @@ public class ListaAlquileres {
 			return false;
 		}
 		alquileres.remove(alq);
+		numAlquileres--;
 
 		return true;
 	}

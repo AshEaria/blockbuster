@@ -33,21 +33,13 @@ public class BuscarSocio extends Opcion {
 		socios = ListaSocios.getInstance();
 		
 		while(numOK == false) {
-			String input = JOptionPane.showInputDialog("Numero de socio: "); 
+			String input = JOptionPane.showInputDialog("DNI del socio: "); 
 			if (input == null) {
 				break;
 			}
-			try {
-				numSocio = Integer.parseInt(input);
-			}
-			catch (NumberFormatException ex) {
-				String str = ("El numero de socio no ha sido bien introducido.");
-				JOptionPane.showMessageDialog(null, str);
-				continue;
-			}
-			socio = socios.encuentra(numSocio);
+			socio = socios.encuentra(input);
 			if (socio == null) {
-				String str = ("El socio " + numSocio + " no existe. ");
+				String str = ("El socio con DNI " + input + " no existe. ");
 				JOptionPane.showMessageDialog(null, str);
 				continue;
 			}  else numOK = true;
@@ -75,27 +67,35 @@ public class BuscarSocio extends Opcion {
 			/* Modificamos el socio y nos vamos */
 				if (!modificaSocio()) {
 					JOptionPane.showMessageDialog(null, "Alguno de los campos marcados con (*) esta vacio. ", null, JOptionPane.ERROR_MESSAGE);
+					return; 
 				}
 				JOptionPane.showMessageDialog(vista, "Socio modificado correctamente.");
 				Aplicacion.vuelveMenuEmpleado();
 		}
 	}
 
+	/** 
+	 * Modifica el socio segun el contenido de los campos de la vista. 
+	 * 
+	 * @return true si la modificacion ha sido exitosa, false si las cajas de Nombre o DNI estaban vacias. 
+	 */
 	private boolean modificaSocio() {
-		if ((vista.getCajaNombre().getText().isEmpty()) && (vista.getCajaDNI().getText().isEmpty())) return false; 
+		if ((vista.getCajaNombre().getText().isEmpty()) || (vista.getCajaDNI().getText().isEmpty())) return false; 
 		
 		socio.setNombre(vista.getCajaNombre().getText());
-		// TODO terminar esto
+		socio.setDni(vista.getCajaDNI().getText());
+		socio.setDireccion(vista.getCajaDireccion().getText());
+		socio.setEmail(vista.getCajaEmail().getText());
+		socio.setTelefono(vista.getCajaTelefono().getText());
 		return true;
 	}
 
-	/* (non-Javadoc)
+	/**
 	 * @see controladores.Opcion#getVista()
 	 */
 	@Override
 	public JPanel getVista() {
-		// TODO Auto-generated method stub
-		return null;
+		return vista;
 	}
 
 }
